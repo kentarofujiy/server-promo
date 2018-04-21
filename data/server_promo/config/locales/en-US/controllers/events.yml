@@ -1,0 +1,9 @@
+en-US:
+  events:
+    index:
+      title: Events
+      no_event: No events scheduled for this month
+    show:
+      about_event: Abount the Event
+    period: "From %{start} to %{end}"
+    target: "%B %Y"

@@ -1,0 +1,15 @@
+pt-BR:
+  place_list:
+    name: &name
+      one: Coleção
+      other: Coleções
+      gender: f
+    attributes: &attributes
+      name: Nome
+  activerecord:
+    models:
+      place_list:
+        <<: *name
+    attributes:
+      place_list:
+        <<: *attributes

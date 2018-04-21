@@ -1,0 +1,21 @@
+pt-BR:
+  news:
+    name: &name
+      one: Novidade
+      other: Novidades
+      gender: f
+    attributes: &attributes
+      title: Título
+      excerpt: Excerto
+      contents: Contéudo
+      published_at: Data de Publicação
+    status:
+      draft: Rascunho
+      published: Publicada
+  activerecord:
+    models:
+      news:
+        <<: *name
+    attributes:
+      news:
+        <<: *attributes

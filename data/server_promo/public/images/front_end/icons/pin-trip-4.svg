@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="500px" height="500px" viewBox="0 0 500 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.3 (29802) - http://www.bohemiancoding.com/sketch -->
+    <title>pin-trip-4</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="pin-trip-4">
+            <g id="Group" transform="translate(68.000000, 0.000000)">
+                <path d="M182,0 C81.54,0 0.17,81.36 0.17,181.83 C0.17,329.57 182,500 182,500 C182,500 363.83,329.57 363.83,181.83 C363.7,81.36 282.33,0 182,0" id="Fill-25" fill="#4E4E4B"></path>
+                <path d="M319.56,181.54 C319.56,257.51 257.97,319.1 182,319.1 C106.03,319.1 44.44,257.51 44.44,181.54 C44.44,105.57 106.03,43.98 182,43.98 C257.97,43.98 319.56,105.57 319.56,181.54" id="Fill-26" fill="#FFFFFF"></path>
+                <path d="M189.25,201.58 C189.25,176.01 188.33,150.15 190.37,124.65 L189.47,124.65 C183.1,139.67 172.39,153.08 163.19,166.45 C155.14,178.16 147.09,189.87 139.04,201.58 L189.25,201.58 L189.25,201.58 Z M236.88,223.38 L214.86,223.38 L214.86,259.05 L189.25,259.05 L189.25,223.38 L114.56,223.38 L114.56,203.14 L189.25,95.13 L214.86,95.13 L214.86,201.58 L236.88,201.58 L236.88,223.38 L236.88,223.38 Z" id="Fill-27" fill="#4E4E4B"></path>
+            </g>
+        </g>
+    </g>
+</svg>

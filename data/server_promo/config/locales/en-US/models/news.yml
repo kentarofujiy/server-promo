@@ -1,0 +1,21 @@
+en-US:
+  news:
+    name: &name
+      one: News
+      other: News
+      gender: f
+    attributes: &attributes
+      title: Title
+      excerpt: Excerpt
+      contents: Content
+      published_at: Publication Date
+    status:
+      draft: Draft
+      published: Published
+  activerecord:
+    models:
+      news:
+        <<: *name
+    attributes:
+      news:
+        <<: *attributes

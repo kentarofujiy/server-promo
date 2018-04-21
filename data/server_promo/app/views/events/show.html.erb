@@ -1,0 +1,86 @@
+<p id="notice"><%= notice %></p>
+
+<main class="content color-event">
+  <div class="content-filler-lg">
+  </div>
+
+  <header class="content-header">
+    <%= image_tag '/images/front_end/icons/pin-event.svg', class: 'content-header-icon' %>
+    <h1 class="content-header-title">
+
+      <%= @event.name %>
+      <div class="content-header-subtitle color-event">
+        <%# if @event.start.to_date == @event.ending.to_date %>
+          <%= l(@event.start_date, format: :short) %>
+        <%# else %>
+          <%#= @event.start_time %>
+          <%#= @event.end_time %>
+        <%# end %>
+      </div>
+    </h1>
+<%= link_to 'Editar', edit_event_path(@event) %> |
+<%= link_to 'Voltar', events_path %>
+
+  </header>
+
+  <div class="content-tabs">
+    <div class="content-tabs-spacer">
+    </div>
+    <div class="content-tabs-options">
+      <%#= link_to "https://www.facebook.com/sharer/sharer.php?u=#{event_url(@event)}", class: 'content-tabs-options-item', target: '_blank' do %>
+        <%#= image_tag '/imgages/front_end/facebook-white.svg', class:'content-tabs-share-icon' %>
+      <%# end %>
+      <%#= link_to "https://twitter.com/home?status=#{event_url(@event)}", class: 'content-tabs-options-item', target: '_blank' do %>
+        <%#= image_tag '/images/front_end/twitter-white.svg', class:'content-tabs-share-icon' %>
+      <%# end %>
+    </div>
+  </div>
+
+  <div class="content-frame">
+    <div class="event">
+      <article class="event-about">
+      <% if @event.avatar.attached? %><%= image_tag @event.avatar.variant(resize: "400x300") %><% else %> https://picsum.photos/200 <% end %>
+        <h1>Descrição:<%#= t 'events.show.about_event' %></h1>
+        <%#= markdown_to_html @event.description.to_s %><%= @event.description %>
+      </article>
+      <div class="event-information">
+        <%# if @event.registration.active %>
+          <div class="event-registration-aside">
+            <%# if @event.ended? %>
+              <div class="event-registration-closed">
+                fechado<%= t :event_closed, scope: 'event/specifics.registration' %>
+              </div>
+            <%# else %>
+              <%# if @event.registration.ended? %>
+                <div class="event-registration-closed">
+                  periondo<%#= t :period_closed, scope: 'event/specifics.registration' %>
+                </div>
+              <%# elsif @event.registration.started? %>
+                <%#= link_to  t(:registration_for_this_event, scope: 'event/specifics.registration'), event_registrations_path(@event), class: 'event-registration-aside-button' %>
+                <div class="grid">
+                  <div class="grid-cell span-7 event-registration-aside-quota">
+                    <%# if @event.registration.quota.present? %>
+                      <%#= pluralize @event.registrations_left, t(:remaining_vacancy, scope: 'event/specifics.registration'), 
+                          t(:vacancies_remaining, scope: 'event/specifics.registration') %>
+                    <%# end %>
+                  </div>
+                  <div class="grid-cell span-5 event-registration-aside-regulation">
+                    <%# if @event.registration.regulation.present? %>
+                      <%#= link_to t(:regulation, scope: 'event/specifics.registration'), @event.registration.regulation %>
+                    <%# end %>
+                  </div>
+                </div>
+              <%# else %>
+                <div class="event-registration-closed">
+                  <%#= t :not_opened, scope: 'event/specifics.registration' %>
+                </div>
+              <%# end %>
+            <%# end %>
+          </div>
+        <%# end %>
+
+      </div>
+    </div>
+  </div>
+</main>
+

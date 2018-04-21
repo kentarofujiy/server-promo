@@ -1,0 +1,16 @@
+pt-BR:
+  landmark:
+    name: &name
+      one: Ponto Turístico
+      other: Pontos Turísticos
+      gender: m
+    attributes: &attributes
+      name: Nome
+      place: Local
+  activerecord:
+    models:
+      landmark:
+        <<: *name
+    attributes:
+      landmark:
+        <<: *attributes

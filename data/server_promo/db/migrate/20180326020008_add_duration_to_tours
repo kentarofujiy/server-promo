@@ -1,0 +1,8 @@
+class AddDurationToTours < ActiveRecord::Migration[5.1]
+  def change
+    add_column :tours, :duration, :string
+    add_column :tours, :intensity, :string
+    add_column :tours, :distance, :string
+    add_column :tours, :audience, :string
+  end
+end

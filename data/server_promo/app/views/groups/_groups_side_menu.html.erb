@@ -1,0 +1,25 @@
+ <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingOne">
+      <h4 class="panel-title">
+        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        Mais Coleções  
+        </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+      <div class="panel-body">
+      <ul>
+     <% Group.all.each do |group| %>
+                    <li role="presentation" class="groups_side_menu">
+                        <%= link_to "#{group.name}", group_path(group) %>
+                        <span class="label label-default"><%= group.pois.count %></span>
+                    </li>
+    <% end %>
+       </ul>
+      </div>
+    </div>
+  </div>
+
+    </div>
+

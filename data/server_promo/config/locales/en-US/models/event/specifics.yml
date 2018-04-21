@@ -1,0 +1,46 @@
+en-US:
+  event/specifics:
+    attributes:
+      local: Local
+      fee: Fee
+      free: Free    
+      schedule: Schedule
+      period_registration: Period of registration
+      parking_lot: Parking
+      target_audience: Target Audience
+      promoter: Promoter
+      allows_pets: Pets allowed
+      toilets: Toilets
+      accessibility: Accessibility
+      wifi: Wi-Fi
+      contacts: Contacts      
+    registration:
+      not_opened: Registration has not started yet
+      period_closed: Registration period closed
+      event_closed: Event closed
+      registration_for_this_event: Registration for this event
+      regulation: Regulation
+      vacancies_remaining: Vacancies remaining
+      remaining_vacancy: Remaining vacancy
+    parking_lot:
+      none: None
+      paid: Paid
+      free: Free
+    target_audience:
+      children: Children
+      youth: Youth
+      adults: Adults
+      seniors: Seniors
+    accessibility:
+      braille_menu: Braille menu
+      special_service: Special Service
+      mobility_access: Mobility Access
+      accessible_toilets: Adapted Toilets
+      accessible_desk: Service Desk
+      accessible_tables: Dining tables
+      reserved_seats: Reserved seats in auditoriums
+      accessible_lodging: Hosting Locations
+      parking_spot_for_disability: Parking space for people with disabilities
+      parking_spot_for_elderly: Parking space for the elderly
+      accessibility_signaling: Signaling indicating access to spaces
+      fortified_seats: Chair for obese people

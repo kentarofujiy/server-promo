@@ -1,0 +1,140 @@
+
+<%= render 'landmarks/landmarks_carousel' %>
+      <div class="color-place">
+        <%= render 'pois/map_home' %>
+      </div>
+
+    <div class="content-filler-lg">
+      </div>
+     
+          <div class="color-place">
+          <header class="content-header">
+            <%= image_tag '/images/front_end/icons/pin-place-list.svg', class: 'content-header-icon' %>
+            <h1 class="content-header-title">
+            Coleções
+              <%#= t 'welcome.index.content.title' %>
+              <div class="content-header-subtitle">
+                <%#= t 'welcome.index.content.subtitle'%>
+              </div>
+            </h1>
+          </header>
+          <div class="container">
+           <%= render 'groups/groups_cards' %>
+           </div>      
+          <div class="content-retreat">
+</div>
+</div>
+      <div class="color-tour">
+          <header class="content-header">
+            <%= image_tag '/images/front_end/icons/pin-tour.svg', class: 'content-header-icon' %>
+            <h1 class="content-header-title">
+              Ainda não sabe o que fazer na cidade?
+              <%#= t 'welcome.index.content.title' %>
+              <div class="content-header-subtitle">
+                Navegue pelos roteiros abaixo e descubra.
+                <%#= t 'welcome.index.content.subtitle'%>
+              </div>
+            </h1>
+          </header>
+          <div class="content-retreat">
+
+          
+            <div class="grid">
+              
+<%= render 'tours/home_tour_card' %>
+
+
+            </div>
+          </div>
+        </div>
+
+        <div class="color-about about-section">
+            <header class="content-header">
+              <%= image_tag '/images/front_end/icons/pin-about.svg', class: 'content-header-icon' %>
+              <h1 class="content-header-title">
+                  Campinas é uma cidade surpreendente.
+                <%#= t 'welcome.index.about.title' %>
+                <div class="content-header-subtitle"><%#= t 'welcome.index.about.subtitle' %>
+                  Reconhecida como a capital brasileira da ciência, tecnologia e inovação.
+                </div>
+              </h1>
+            </header>
+
+            <div class="about-grid">
+              <div class="about-grid-item">
+                <div class="about-grid-item-icon">
+                  <%= image_tag '/images/front_end/home-population.svg' %>
+                </div>
+                <div class="about-grid-item-description"><%#= t('welcome.index.about.number_of_inhabitants_html')%>Número de Habitantes</div>
+                <div class="about-grid-item-number" id="hab"><p>1</p></div>
+              </div>
+              <div class="about-grid-item hide-on-small-screen">
+                <div class="about-grid-item-icon">
+                  <%= image_tag '/images/front_end/home-idh.svg' %>
+                </div>
+                <div class="about-grid-item-description">IDH em Campinas<%#= t('welcome.index.about.hdi_in_campinas_html')%></div>
+                <div class="about-grid-item-number" id="idh"><p>0</p></div>
+              </div>
+              <div class="about-grid-item hide-on-small-screen">
+                <div class="about-grid-item-icon">
+                  <%= image_tag '/images/front_end/home-elders.svg' %>
+                </div>
+                <div class="about-grid-item-description"><%#= t('welcome.index.about.expectancy_of_life_html')%>Expectativa de vida</div>
+                <div class="about-grid-item-number" id="vida"><p>1</p></div>
+              </div>
+            </div>
+          </div>
+<script>
+(function($){
+$(document).ready(function() {
+  
+  var counter = 0;
+  var c = 0;
+  var i = setInterval(function(){
+      $(".about-grid #hab p").html("1.091." + c);
+
+    counter++;
+    c++;
+      
+    if(counter == 947) {
+        clearInterval(i);
+    }
+  }, 1);
+});
+ })(jQuery);
+
+ (function($){
+$(document).ready(function() {
+  
+  var counter1 = 0;
+  var c1 = 0;
+  var i1 = setInterval(function(){
+      $(".about-grid #idh p").html("0," + c1);
+
+    counter1++;
+    c1++;
+      
+    if(counter1 == 851 ) {
+        clearInterval(i1);
+    }
+  }, 1);
+});
+ })(jQuery);
+ (function($){
+$(document).ready(function() {
+  
+  var counter2 = 0;
+  var c2 = 0;
+  var i2 = setInterval(function(){
+      $(".about-grid #vida p").html("79," + c2);
+
+    counter2++;
+    c2++;
+      
+    if(counter2 == 92) {
+        clearInterval(i2);
+    }
+  }, 10);
+});
+ })(jQuery);
+</script>

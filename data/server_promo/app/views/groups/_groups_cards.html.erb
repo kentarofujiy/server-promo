@@ -1,0 +1,19 @@
+<section class="row">
+   
+
+<% Group.all.each do |group| %>
+
+  <div class="col-sm-6 col-md-4">
+<%= link_to group_path(group), class: 'place-collection' do %>
+  <%= image_tag group.avatar, class: 'place-collection-image' %>
+  <span class="place-collection-legend">Coleção</span>
+  <span class="place-collection-name"><%= group.name %></span>
+<% end %>
+
+</div>   
+<% end %> 
+
+</section>
+
+
+

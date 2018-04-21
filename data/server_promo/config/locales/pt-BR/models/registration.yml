@@ -1,0 +1,68 @@
+pt-BR:
+  registration:
+    name: &name
+      one: Inscrição
+      other: Inscrições
+      gender: f
+    attributes: &attributes
+      event: Evento
+      status: Status
+      name: Nome
+      dob: Data de nascimento
+      gender: Gênero
+      cpf: CPF
+      rg: RG
+      email: E-mail
+      telephone: Telefone fixo
+      mobile: Celular
+      home_address: Endereço
+      home_postcode: CEP
+      home_neighborhood: Bairro
+      home_locality: Cidade
+      home_region: Estado
+      education_level: Escolaridade
+      occupation_area: Área de ocupação
+      job_title: Cargo ou função
+      blood_type: Tipo sanguíneo
+      health_insurance: Convênio médico
+      medications: Tratamento médico em curso
+      emergency_contact: Contato de emergência
+      special_needs: Necessidades especiais
+      entity_name: Nome
+      entity_telephone: Telefone comercial
+      entity_email: E-mail
+      entity_site: Site
+      entity_address: Endereço
+      entity_postcode: CEP
+      entity_neighborhood: Bairro
+      entity_locality: Cidade
+      entity_region: Estado
+      newsletter: Receber novidades por email
+    status:
+      active: Ativa
+      cancelled: Cancelada
+      waiting: Aguardando
+    gender:
+      male: Masculino
+      female: Feminino
+      other: Outro
+    education_level:
+      primary: Fundamental completo
+      secondary: Médio completo
+      higher: Superior completo
+    blood_type:
+      o_positive: O+
+      o_negative: O-
+      a_positive: A+
+      a_negative: A-
+      b_positive: B+
+      a_negative: A-
+      ab_positive: AB+
+      ab_negative: AB-
+  activerecord:
+    models:
+      registration:
+        <<: *name
+    attributes:
+      registration:
+        <<: *attributes

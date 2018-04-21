@@ -1,0 +1,32 @@
+<p id="notice"><%= notice %></p>
+<nav class="breadcrumb">
+  <%#= link_to t('welcome.index.title'), root_path %>
+  <%#= link_to t('tours.index.title'), tours_path %>
+</nav>
+
+<main class="content color-tour">
+  <div class="content-filler-lg">
+  </div>
+
+  <header class="content-header">
+<%= image_tag '/images/front_end/icons/pin-tour.svg', class: 'content-header-icon' %>
+    <h1 class="content-header-title">
+    Roteiros
+    </h1>
+  </header>
+
+  <div class="content-retreat">
+    <div class="grid">
+<%= render 'tours/tour_card' %> 
+ <br>
+
+<%= link_to 'New Tour', new_tour_path %>
+
+      <%# @tours.each do |tour| %>
+        <%#= render 'tour', tour: tour %>
+      <%# end %>
+    </div>
+  </div>
+</main>
+
+

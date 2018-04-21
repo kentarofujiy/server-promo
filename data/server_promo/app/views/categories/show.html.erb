@@ -1,0 +1,33 @@
+<h1 align="center">
+       <%=  @category.name %>
+    </h1>
+
+  <div class="content-frame row">
+    <div class="place col-xs-9">
+             <div class="row">
+          <div class="col-xs-9" style="display: flex; flex-wrap: wrap;">
+            <!-- <%= render 'projetos/projeto', obj: @category_projetos %> -->
+            <%= render 'pois/poicard', obj: @category_pois %>
+            <% if logged_in? and current_user.admin? %>
+              <div class="row">
+                <span class="badge">
+                  <%= link_to "Edit Category Name", edit_category_path(@category) %>
+                </span>
+              </div>
+              <%= link_to "Apagar este Projeto", category_path(@category), method: :delete,
+
+data: { confirm: "Você tem certeza?"},
+
+class: "btn btn-xs btn-danger" %>
+            <% end %>
+            <div align="center">
+              <%= paginate @category_projetos %>
+            </div>
+          </div>
+        </div> <!- row ->
+
+   </div> <!- col-9 ->
+        <div class="col-xs-3">
+          <%= render "categories_side_menu" %>
+        </div>
+      </div>

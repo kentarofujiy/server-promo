@@ -1,0 +1,16 @@
+en-US:
+  landmark:
+    name: &name
+      one: Landmarks
+      other: Landmarks
+      gender: m
+    attributes: &attributes
+      name: Name
+      place: Place
+  activerecord:
+    models:
+      landmark:
+        <<: *name
+    attributes:
+      landmark:
+        <<: *attributes

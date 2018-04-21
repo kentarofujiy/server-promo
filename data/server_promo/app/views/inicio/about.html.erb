@@ -1,0 +1,147 @@
+<main class="content color-about">
+  <div class="content-filler-sm">
+  </div>
+
+  <header class="content-header">
+    <%= image_tag '/images/front_end/icons/pin-about.svg', class: 'content-header-icon' %>
+    <h1 class="content-header-title">Sobre</h1>
+  </header>
+
+  <div class="content-tabs hide-on-small-screen">
+    <a href="#sobre-a-cidade" class="content-tabs-button">
+      A Cidade
+    </a>
+    <a href="#campinas-em-numeros" class="content-tabs-button">
+      Campinas em números
+    </a>
+    <a href="#historia-de-campinas" class="content-tabs-button">
+      História de Campinas
+    </a>
+  </div>
+
+  <div class="content-frame">
+    <section class="section">
+      <h1 class="heading-one colored centered" data-hashook="sobre-a-cidade">A Cidade</h1>
+      <figure class="picture skip-8">
+        <%= image_tag "https://s3-sa-east-1.amazonaws.com/conhecacampinas/front_end/sobre-campinas-foto-noturna.jpg" %>
+      </figure>
+      <p class="skip-4">
+        Situada no coração de São Paulo, o estado mais desenvolvido do Brasil, Campinas vive o seu melhor momento em décadas, tanto no campo econômico quanto no social.
+      </p>
+      <p class="skip-4">
+        A cidade conta com uma logística privilegiada: rodovias modernas, o melhor aeroporto do país, uma rede ferroviária que a conecta com o porto de Santos – o mais importante do continente – e uma das rodoviárias mais belas do Brasil, com 100% de acessibilidade.
+      </p>
+      <p class="skip-4">
+        Além disso, outros fatores contribuem para fazer de Campinas um destino surpreendente. Entre as 500 maiores empresas do mundo, 50 têm filiais em sua região metropolitana. Suas universidades estão entre as melhores do Brasil, concentrando 15% de toda a produção científica nacional.
+      </p>
+      <p class="skip-4">
+        Campinas também surpreende oferecendo, além de tudo, uma ótima qualidade de vida. Com mais de 1 milhão de habitantes, a cidade oferece comércio diversificado, amplas áreas verdes e inúmeros espaços de lazer, esporte e cultura.
+      </p>
+      <p class="skip-4">
+        Isso é só um resumo de Campinas. Explore aqui as inúmeras possibilidades que fazem desta cidade a mais surpreendente do Brasil.
+      </p>
+    </section>
+    <section class="section grid">
+      <div class="grid-cell span-1">
+      </div>
+      <div class="grid-cell span-4">
+        <figure class="picture about-coat-of-arms">
+          <figcaption class="picture about-coat-of-arms-title">Brasão de Campinas</figcaption>
+          <%= image_tag "https://s3-sa-east-1.amazonaws.com/conhecacampinas/front_end/brasao-campinas.png", class:"skip-4", title:"Brasão de Campinas" %>
+        </figure>
+      </div>
+      <div class="grid-cell span-1">
+      </div>
+      <div class="grid-cell span-5 about-general-information">
+        <h1 class="heading-three">Informações Gerais</h1>
+        <dl class="summary skip-4">
+          <dt class="summary-term">Fundação</dt>
+          <dd class="summary-description">14 de Julho de 1774</dd>
+          <dt class="summary-term">Gentílico</dt>
+          <dd class="summary-description">Campineiro</dd>
+          <dt class="summary-term">Prefeito</dt>
+          <dd class="summary-description">Jonas Donizette</dd>
+          <dt class="summary-term">Vice-prefeito</dt>
+          <dd class="summary-description">Henrique Magalhães Teixeira</dd>
+          <dt class="summary-term">Presidente da Câmara</dt>
+          <dd class="summary-description">Aparecido Campos Filho</dd>
+        </dl>
+      </div>
+
+    </section>
+    <section class="section">
+      <h1 class="heading-one colored centered" data-hashook="campinas-em-numeros">Campinas em Números</h1>
+
+      <div class="grid about-campinas-in-numbers">
+        <div class="grid-cell span-4">
+          <%= image_tag "https://s3-sa-east-1.amazonaws.com/conhecacampinas/front_end/about-population.svg", alt: "" %>
+          <div class="about-description">Número Atual<br>de Habitantes</div>
+          <div class="about-number">1.091.946</div>
+        </div>
+        <div class="grid-cell span-4">
+          <%= image_tag "https://s3-sa-east-1.amazonaws.com/conhecacampinas/front_end/about-area.svg", alt: "" %>
+          <div class="about-description">Área<br>Territorial</div>
+          <div class="about-number">796,4</div>
+          <div class="about-unit">km<sup>2</sup></div>
+        </div>
+        <div class="grid-cell span-4">
+          <%= image_tag "https://s3-sa-east-1.amazonaws.com/conhecacampinas/front_end/about-altitude.svg", alt: "" %>
+          <div class="about-description">Altitude em Relação<br>ao Nível do Mar</div>
+          <div class="about-number">680</div>
+          <div class="about-unit">metros</div>
+        </div>
+        <div class="grid-cell span-4">
+          <%= image_tag "https://s3-sa-east-1.amazonaws.com/conhecacampinas/front_end/about-idh.svg", alt: "" %>
+          <div class="about-description"><abbr title="Índice de Desenvolvimento Humano">IDH</abbr> em<br>Campinas</div>
+          <div class="about-number">0,805</div>
+          <div class="about-unit">14º do Estado e 28º do Brasil</div>
+        </div>
+        <div class="grid-cell span-4">
+          <%= image_tag "https://s3-sa-east-1.amazonaws.com/conhecacampinas/front_end/about-coins.svg", alt: "" %>
+          <div class="about-description"><abbr title="Produto Interno Bruto">PIB</abbr><br>per capita</div>
+          <div class="about-number">44.850,57</div>
+          <div class="about-unit">reais</div>
+        </div>
+        <div class="grid-cell span-4">
+          <%= image_tag "https://s3-sa-east-1.amazonaws.com/conhecacampinas/front_end/about-elders.svg", alt: "" %>
+          <div class="about-description">Expectativa<br>de Vida</div>
+          <div class="about-number">75,91</div>
+          <div class="about-unit">anos</div>
+        </div>
+      </div>
+
+    </section>
+    <section class="section">
+      <h1 class="heading-one colored centered" data-hashook="historia-de-campinas">História de Campinas</h1>
+      <p class="skip-4">
+        A área em que hoje se acha instalada a cidade de Campinas conta com pouco mais de 240 anos de história colonial/imperial/republicana e com milhares de anos de história indígena. Nos marcos de sua formação colonial, a cidade de Campinas surgiu na primeira metade do século XVIII como um bairro rural da Vila de Jundiaí. Localizado nas margens de uma trilha aberta por paulistas do Planalto de Piratininga entre 1721 e 1730 (trilha que seguia em direção às recém descobertas minas dos Goiases), o povoamento do "Bairro Rural do Mato Grosso" teve início com a instalação de um pouso de tropeiros nas proximidades da "Estrada dos Goiases". O pouso das "Campinas do Mato Grosso" (erguido em meio a pequenos descampados ou "campinhos", em uma região de mata fechada) impulsionou o desenvolvimento de várias atividades de abastecimento e promoveu uma maior concentração populacional, reunindo-se neste bairro rural em 1767, 185 pessoas.
+      <p class="skip-4">
+        No mesmo período (segunda metade do século XVIII), ganhava forma também uma outra dinâmica econômica, política e social na região, associada à chegada de fazendeiros procedentes de Itú, Porto Feliz, Taubaté, entre outras. Estes fazendeiros buscavam terras para instalar lavouras de cana e engenhos de açúcar, utilizando-se para tanto de mão de obra escrava. De fato, foi por força e interesse destes fazendeiros, ou ainda, por interesse do Governo da Capitania de São Paulo, que o bairro rural do Mato Grosso se fez transformado em Freguesia de Nossa Senhora da Conceição das Campinas do Mato Grosso (1774); depois, em Vila de São Carlos (1797), e em Cidade de Campinas (1842); período no qual as plantações de café já suplantavam as lavouras de cana e dominavam a paisagem da região.
+      </p>
+      <p class="skip-4">
+        Os cafezais, por sua vez, nasceram do interior das fazendas de cana, impulsionando em pouco tempo um novo ciclo de desenvolvimento da cidade. A partir da economia cafeeira, Campinas passou a concentrar um grande contingente de trabalhadores escravos e livres (de diferentes procedências), empregados em plantações e em atividades produtivas rurais e urbanas. No mesmo período (segunda metade do século XVIII), a cidade começava a experimentar um intenso percurso de "modernização" dos seus meios de transporte, de produção e de vida, permanecendo vivo até hoje na memória da cidade, aspectos diversos destas transformações.
+      </p>
+      <p class="skip-4">
+        Com a crise da economia cafeeira, a partir da década de 1930, a cidade "agrária" de Campinas assumiu uma fisionomia mais industrial e de serviços. No plano urbanístico, por exemplo, Campinas recebeu do "Plano Prestes Maia" (1938), um amplo conjunto de ações voltado a reordenar suas vocações urbanas, sempre na perspectivas de impulsionar velhos e novos talentos, como o de pólo tecnológico do interior do Estado de São Paulo.
+      </p>
+      <figure class="picture skip-4">
+        <%= image_tag "https://s3-sa-east-1.amazonaws.com/conhecacampinas/front_end/about-casa-de-saude.jpg" %>
+      </figure>
+      <p class="skip-4">
+        No mesmo percurso, a cidade passou a concentrar uma população mais significativa, constituída de migrantes e imigrantes procedentes das mais diversas regiões do estado, do País e do mundo, e que chegavam à Campinas atraídos pela instalação de um novo parque produtivo (composto de fábricas, agro-indústrias e estabelecimentos diversos). Entre as décadas de 1930 e 1940, portanto, a cidade de Campinas passou a vivenciar um novo momento histórico, marcado pela migração e pela multiplicação de bairros nas proximidades das fábricas, dos estabelecimentos e das grandes rodovias em implantação - Via Anhanguera, (1948), Rodovia Bandeirantes (1979) e Rodovia Santos Dumont, (década de 1980).
+      </p>
+      <figure class="picture skip-4">
+        <%= image_tag "https://s3-sa-east-1.amazonaws.com/conhecacampinas/front_end/about-escola-normal-carlos-gomes.jpg" %>
+      </figure>
+      <p class="skip-4">
+        Estes novos bairros, implantados originalmente sem infra-estrutura urbana, conquistaram uma melhor condição de urbanização entre as décadas de 1950 a 1990, ao mesmo tempo em que o território da cidade aumentava 15 vezes e sua população, cerca de 5 vezes. De maneira especial, entre as décadas de 1970/1980, os fluxos migratórios levaram a população a praticamente duplicar de tamanho.
+      </p>
+      <figure class="picture skip-4">
+        <%= image_tag "https://s3-sa-east-1.amazonaws.com/conhecacampinas/front_end/about-santa-casa.jpg" %>
+      </figure>
+      <p class="skip-4">
+        Na atualidade, Campinas ocupa uma área de 801 km² e conta com uma população de mais de 1 milhão de habitantes, distribuída por seis distritos (Joaquim Egídio, Sousas, Barão Geraldo, Nova Aparecida, Campo Grande e Nova Aparecida) e centenas de bairros. Este vigor econômico e social, trazido em especial pela ampliação de sua população trabalhadora, tem permitido à Campinas constituir-se como um dos pólos da região metropolitana de São Paulo, formada por 20 cidades e uma população estimada em 2,33 milhões de habitantes (6,31% da população do Estado).
+      </p>
+    </section>
+  </div>
+</main>

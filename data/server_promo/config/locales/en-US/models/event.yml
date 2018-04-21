@@ -1,0 +1,26 @@
+en-US:
+  event:
+    name: &name
+      one: Event
+      other: Events
+      gender: m
+    attributes: &attributes
+      name: Name
+      category: Category
+      schedule: Schedule
+      place: Place
+      registration: Registration Options
+    categories:
+      sporting: Sporting
+      gastronomic: Gastronomic
+      cultural: Culturais
+      educational: Educational and Training
+      corporative: Corporative
+      scientific: Scientific Technicians
+  activerecord:
+    models:
+      event:
+        <<: *name
+    attributes:
+      event:
+        <<: *attributes

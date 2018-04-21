@@ -1,0 +1,49 @@
+<div class="jumbotron">
+<h1><%= @projeto.nome %></h1>
+<% if @projeto.categories.any? %>
+<p>Categorias: <%= render @projeto.categories %></p>
+<% end %>
+<hr>
+<p>Especialidade:</p>
+<span><%= @projeto.especialidade %></span>
+<hr>
+<p>Telefone:</p>
+<span><%= @projeto.telefone %></span>
+<hr>
+<p>Endereço:</p>
+<span><%= @projeto.endereco %></span>
+<hr>
+<p>Email:</p>
+<span><%= @projeto.email %></span>
+
+<hr>
+</br>
+<button type="button" class="btn btn-default"> <%= link_to "Voltar a Lista", projetos_path %> </button>
+<% if logged_in? && (current_user == @projeto.user || current_user.admin?) %>
+<button type="button" class="btn btn-info"><%= link_to "Editar Projeto", edit_projeto_path %></button>
+<%= link_to "Apagar este Projeto", projeto_path(@projeto), method: :delete,
+
+data: { confirm: "Você tem certeza?"},
+
+class: "btn btn-xs btn-danger" %>
+
+<% end %>
+<div class="">
+<% if @projeto.user %>
+<ul class="">
+   <div class="">
+      <div class="">
+         <li>Criado por:</li>
+         <li><%= link_to gravatar_for(@projeto.user), user_path(@projeto.user) %></li>
+         <li class="">
+            <%= link_to @projeto.user.username, user_path(@projeto.user) %>
+         </li>
+         <li><small>
+            <%= pluralize(@projeto.user.projetos.count, "projeto") if @projeto.user.projetos %>
+            </small>
+         </li>
+      </div>
+   </div>
+</ul>
+<% end %>
+</div>

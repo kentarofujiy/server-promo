@@ -1,0 +1,85 @@
+<p id="notice"><%= notice %></p>
+
+
+<main class="content color-place">
+  <%= content_tag :div, id: "map", data: { pois: @pois.to_json(methods: [:address]) } do -%>
+  <% end -%>
+    <!--<div class="content-filler-sm"></div> -->
+
+
+  <header class="content-header">
+    <%= image_tag '/images/front_end/icons/pin-place.svg', class: 'content-header-icon' %>
+    <h1 class="content-header-title">Conheça Campinas</h1>
+  </header>
+<div class="content-frame">
+
+  <section class="container row">
+    <div  class="col-md-12">
+      <%= form_tag(pois_path, :method => "get", id: "search-form", class:"form-inline row") do %>
+        <%= text_field_tag :q, params[:q], placeholder: "Buscar Lugares", class:"form-control col-md-10 busca-poi" %>
+      <%= submit_tag "Buscar", :q=> nil,  class:"btn btn-primary col-md-2" %>
+      <% end %>
+    </div>
+    
+    <div  class="">
+       <%#= link_to 'Criar Estabelecimento', new_poi_path, class:"btn btn-success" %>
+       <%#= link_to 'Refazer a busca', "", id: "redo-search", class:"btn btn-warning" %>
+  
+    </div>
+    
+    </section>
+    <br>
+
+      <div class="place">
+        <% @pois.each do |poi| %>
+
+
+<div class="place-grid-item">
+  <%= link_to poi_path(poi), class: 'place-card' do %>
+  <div class="place-card-image" style="background-image:url(<% if poi.avatar.attached? %> <%= url_for(poi.avatar) %> <% else %> https://picsum.photos/200 <% end %>)" >&nbsp;</div>
+    <div class="place-card-name"><%= poi.name %></div>
+    <div class="place-card-address"><%= poi.address %></div>
+    <%# if place.schedule.any? %>
+      <%# if place.open? %>
+        <div class="place-card-status-open">
+          <%= image_tag '/images/front_end/icons/open.svg', class: 'place-card-status-icon' %>
+          Aberto
+        </div>
+      <%# else %>
+        <!-- <div class="place-card-status-closed"> -->
+          <%#= image_tag '/images/front_end/icons/closed-gray.svg', class: 'place-card-status-icon' %>
+        <!--  Fechado
+        </div> -->
+      <%# end %>
+              <% end %>
+               <% if poi.categories.any? %>
+               <p>Categorias: <%= render poi.categories %></p>
+    <%# else %>
+      <div class="place-card-no-status">&nbsp;</div>
+       <%# end %>
+  <% end %>
+                  <% if logged_in? %>
+             <p>
+               <%= link_to 'Detalhes', poi, class:"btn btn-default btn-xs" %>
+               <%= link_to 'Editar', edit_poi_path(poi), class:"btn btn-default btn-xs" %>
+               <%= link_to 'Deletar', poi, method: :delete, data: { confirm: 'Are you sure?' }, class:"btn btn-default btn-xs" %>
+             </p>
+          <% end %>
+  </div>
+
+
+<% end %>
+</div>
+
+     <div class="paginacao col-xs-12">
+     <%= paginate @pois %>
+   </div>
+ </div>
+ 
+</div> 
+  </div> 
+</div> 
+
+
+</main>
+</div> 

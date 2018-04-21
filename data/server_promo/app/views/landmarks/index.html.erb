@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<main class="content color-landmark">
+  <div class="content-filler-lg">
+  </div>
+    <header class="content-header">
+    <%= image_tag '/images/front_end/icons/pin-landmark.svg', class: 'content-header-icon' %>
+    <h1 class="content-header-title">Landmarks
+    </h1>
+  </header>
+
+
+    <% @landmarks.each do |landmark| %>
+       
+<div class="grid-cell span-12 skip-2-from-1">
+  <% if landmark.pois.any? %>
+              <%= render landmark.pois  %>
+ <% end %>
+ <%= link_to 'Deletar', landmark, method: :delete, data: { confirm: 'Are you sure?' }, class:"btn btn-default btn-xs" %>
+
+</div>
+       <% end %>
+<%= link_to 'New Landmark', new_landmark_path %>
+</main>

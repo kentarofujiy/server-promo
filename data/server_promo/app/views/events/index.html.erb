@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+<main class="content color-event">
+  <div class="content-filler-lg">
+  </div>
+
+  <header class="content-header">
+    <%= image_tag '/images/front_end/icons/pin-event.svg', class: 'content-header-icon' %>
+    <h1 class="content-header-title">
+      Eventos
+    </h1>
+  </header>
+    <div class="container">
+
+<%= month_calendar events: @events  do |date, events| %>
+<%= date.day %>
+    <% events.each do |event| %>
+      <div class="cal-dia row">
+      <%= link_to event_path(event) do %>
+      <div class="cal-hora col-xs-3">
+        <%= l(event.start_time.to_time, format: :hora)  %>
+      </div>
+      <div class="col-xs-9 events-list-item-name">
+ <% if event.avatar.attached? %><%= image_tag event.avatar.variant(resize: "100x60") %><% else %> https://picsum.photos/100 <% end %>
+      </div>
+      <div class="col-xs-12">        
+              <%= event.name %>
+            </div>
+         <% end %>
+      </div>
+    <% end %>
+<% end %>
+
+<%= link_to 'Novo Evento', new_event_path %>
+</div>

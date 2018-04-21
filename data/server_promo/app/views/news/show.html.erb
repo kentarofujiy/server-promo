@@ -1,0 +1,37 @@
+<p id="notice"><%= notice %></p>
+
+<main class="content color-news">
+  <div class="content-filler-sm"></div>
+
+  <header class="content-header">
+    <%= image_tag '/images/front_end/icons/pin-news.svg', class: 'content-header-icon' %>
+    <%#= time_tag @news.published_at, l(@news.published_at, format: '%d de %B de %Y'), class: 'content-header-news-date' %>
+    <h1 class="content-header-title">
+      <%= @news.title %>
+    </h1>
+  </header>
+
+  <div class="content-tabs">
+    <div class="content-tabs-spacer">
+    </div>
+    <div class="content-tabs-options">
+      <%= link_to "https://www.facebook.com/sharer/sharer.php?u=#{news_url(@news)}", class: 'content-tabs-options-item', target: '_blank' do %>
+        <%= image_tag '/images/front_end/facebook-white.svg', class:'content-tabs-share-icon' %>
+      <% end %>
+      <%= link_to "https://twitter.com/home?status=#{news_url(@news)}", class: 'content-tabs-options-item', target: '_blank' do %>
+        <%= image_tag '/images/front_end/twitter-white.svg', class:'content-tabs-share-icon' %>
+      <% end %>
+    </div>
+  </div>
+
+  <div class="content-frame formatted-content">
+    <section class="section">
+   <% if @news.avatar.attached? %><%= image_tag @news.avatar %><% else %> https://picsum.photos/200 <% end %>
+      <%= @news.body %>
+      <%#= markdown_to_html @news.contents.to_s %>
+    </section>
+  </div>
+<%= link_to 'Edit', edit_news_path(@news) %> |
+<%= link_to 'Back', news_index_path %>
+
+</main>

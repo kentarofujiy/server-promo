@@ -1,0 +1,13 @@
+en-US:
+  welcome:
+    index:
+      title: Home
+      content:
+        title: Still don't know what to do in the city?
+        subtitle: Navigate the tour itineraries below and find out.
+      about:
+        title: Campinas is an amazing city.
+        subtitle: Recognized as the Brazilian capital of science, technology and innovation.
+        number_of_inhabitants_html: Current number<br> of inhabitants
+        hdi_in_campinas_html: <abbr title="Human Development Index">HDI</abbr> in<br>campinas
+        expectancy_of_life_html: Expectancy<br> of life

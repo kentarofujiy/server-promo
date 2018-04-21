@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="500px" height="500px" viewBox="0 0 500 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.3 (29802) - http://www.bohemiancoding.com/sketch -->
+    <title>pin-trip-7</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="pin-trip-7">
+            <g id="Group" transform="translate(68.000000, 0.000000)">
+                <path d="M182,0 C81.54,0 0.17,81.36 0.17,181.83 C0.17,329.57 182,500 182,500 C182,500 363.83,329.57 363.83,181.83 C363.7,81.36 282.33,0 182,0" id="Fill-34" fill="#4E4E4B"></path>
+                <path d="M319.56,181.54 C319.56,257.51 257.97,319.1 182,319.1 C106.03,319.1 44.44,257.51 44.44,181.54 C44.44,105.57 106.03,43.99 182,43.99 C257.97,43.99 319.56,105.57 319.56,181.54" id="Fill-35" fill="#FFFFFF"></path>
+                <polyline id="Fill-36" fill="#4E4E4B" points="152.82 259.05 217.45 118.95 132.47 118.95 132.47 95.8 245.52 95.8 245.52 114.14 181.22 259.05 152.82 259.05"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

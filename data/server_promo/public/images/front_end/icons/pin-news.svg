@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="500px" height="500px" viewBox="0 0 500 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.3 (29802) - http://www.bohemiancoding.com/sketch -->
+    <title>pin-news</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="pin-news">
+            <circle id="Oval-1" fill="#3C8E36" cx="250" cy="175.417969" r="175.417969"></circle>
+            <path d="M210.291667,200.625 L210.291667,216.708333 L290.708333,216.708333 L290.708333,200.625 L210.291667,200.625 L210.291667,200.625 Z M178.125,248.875 L322.875,248.875 L322.875,232.791667 L178.125,232.791667 L178.125,248.875 L178.125,248.875 Z M178.125,184.541667 L322.875,184.541667 L322.875,168.458333 L178.125,168.458333 L178.125,184.541667 L178.125,184.541667 Z M210.291667,136.291667 L210.291667,152.375 L290.708333,152.375 L290.708333,136.291667 L210.291667,136.291667 L210.291667,136.291667 Z M178.125,104.125 L178.125,120.208333 L322.875,120.208333 L322.875,104.125 L178.125,104.125 L178.125,104.125 Z" id="Shape" fill="#FFFFFF"></path>
+        </g>
+    </g>
+</svg>

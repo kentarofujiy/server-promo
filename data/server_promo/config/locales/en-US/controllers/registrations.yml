@@ -1,0 +1,32 @@
+en-US:
+  registrations:
+    index:
+      title: Check Inscription
+      enter_yout_email: 'Enter your e-mail address:'
+      button:
+        verify: Verify
+        sign_up: Sign up
+        enter_queue: Enter the queue
+      alert:
+        sign_up_not_be_found_html: 'Registration for the email "<strong>%{email}</strong>" could not be found.'
+        registration_is_active_html: 'Registration for the email "<strong>%{email}</ strong>" is active.'
+        registration_is_in_queue_html: 'Registration for the email "<strong>%{email}</ strong>" is in the queue.'
+        retistration_is_canceled_html: 'Registration for the email "<strong>%{email}</ strong>" is canceled.'
+        cancel_your_registration: To cancel your registration, contact us at eventos@conhecacampinas.com.br.
+    new:
+      title: New Registration
+      form:
+        documents: Documents
+        contact: Contact
+        home_address: Residential Address
+        education_and_profession: Education and Profession
+        medical_data: Medical Data
+        company: Company / Organization
+      button:
+        submit: Submit Subscription
+        submit_queue: Enter the queue
+      alert:
+        registration_fee_html: 'The event has a subscription fee of <strong>%{fee}</strong>. You can check information on how to pay in the enrollment instructions at the top of the page.'
+        registration_in_queue_html: 'All vacancies for this event have been filled, however you can submit your application and enter the queue. In cases of cancellation, the places will be transferred to the people in the queue, in order of arrival.'
+
+

@@ -1,0 +1,6 @@
+en-US:
+  event/registration_fields:
+    options:
+      hidden: Hidden
+      optional: Optional
+      required: Required

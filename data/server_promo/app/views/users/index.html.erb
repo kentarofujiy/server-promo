@@ -1,0 +1,24 @@
+<div class="jumbotron">
+<h1>Lista de Usuários</h1>
+</div>
+
+<% @users.each do |user| %>
+<ul class="listing">
+   <div class="row">
+      <div class="well col-md-4 col-md-offset-4">
+         <li><%= link_to gravatar_for(user), user_path(user) %></li>
+         <li class="article-title">
+            <%= link_to user.username, user_path(user) %>
+         </li>
+         <li><small><%= pluralize(user.projetos.count, "projeto") if user.projetos %></small></li>
+         <% if logged_in? and current_user.admin? %>
+         <li><%= link_to "Remover usuário", user_path(user), method: :delete, data: { confirm: "Você tem certeza de que deseja remover este usuário e todos os Projetos cadastrados por ele?" } %></li>
+         <% end %>
+      </div>
+   </div>
+</ul>
+<% end %>
+</div>
+<div align="center">
+<%#= will_paginate %>
+</div>

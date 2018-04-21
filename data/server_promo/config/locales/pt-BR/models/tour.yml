@@ -1,0 +1,31 @@
+pt-BR:
+  tour:
+    name: &name
+      one: Roteiro
+      other: Roteiros
+      gender: m
+    attributes: &attributes
+      name: Nome
+      stops: Locais
+    intensity:
+      light: Leve
+      moderate: Moderada
+      heavy: Alta
+    audience:
+      everyone: Todos
+      children: Crianças
+      youth: Jovens
+      adults: Adultos
+      seniors: Idosos
+    summary:
+      zero: Roteiro vazio
+      one: '%{sample}'
+      two: '%{sample} e mais 1'
+      other: '%{sample} e outros %{count} locais'
+  activerecord:
+    models:
+      tour:
+        <<: *name
+    attributes:
+      tour:
+        <<: *attributes

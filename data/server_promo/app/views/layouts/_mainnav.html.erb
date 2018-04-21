@@ -1,0 +1,75 @@
+ <div class="topbar">
+    <%# if Settings.maintenance? %>
+      <!--<div class="topbar-alert formatted-content">
+        Modo de manutenção ligado!
+        Para desligar visite as <%#= link_to 'configurações do site.', back_end.settings_path %>
+      </div> -->
+    <%# end %>
+
+    <%# if Settings.warning? %>
+     <!-- <div class="topbar-alert formatted-content">
+        <%#= warning_message %>
+      </div>  -->
+    <%# end %>
+
+    <%= form_tag root_path, method: 'get', class: 'topbar-search' do %>
+      <input name="q" type="search" class="topbar-search-input" placeholder="Busca<%#= t 'search.filters.search_for' %>" autocomplete="off">
+      <button class="topbar-search-button">
+        <%= image_tag '/images/front_end/icons/search-white.svg', class: 'icon' %>
+      </button>
+    <% end %>
+
+    <nav class="topbar-nav navbar">
+      <a class="topbar-brand" href="<%= root_path %>">
+        <%= image_tag '/images/front_end/logo.svg', alt: 'Conheça Campinas'  %>
+      </a>
+      <div class="topbar-menu collapse" id="bs-example-navbar-collapse-1">
+        <%# if Settings.menu.include?('about') %>
+          <%= link_to '/sobre', class: 'topbar-menu-item color-about' do %>
+            <span><%= t 'menu.about' %></span>
+          <%# end %>
+        <% end %>
+        <%# if Settings.menu.include?('places') %>
+          <%= link_to pois_path, class: 'topbar-menu-item color-place' do %>
+            <span><%= t 'menu.places' %></span>
+          <% end %>
+        <%# end %>
+        <%# if Settings.menu.include?('events') %>
+          <%= link_to events_path, class: 'topbar-menu-item color-event' do %>
+            <span><%= t 'menu.events' %></span>
+          <% end %>
+        <%# end %>
+        <%# if Settings.menu.include?('info') %>
+          <%= link_to groups_path, class: 'topbar-menu-item color-information' do %>
+            <span><%= t 'menu.groups' %></span>
+          <% end %>
+        <%# end %>
+        <%# if Settings.menu.include?('landmarks') %>
+          <%= link_to landmarks_path, class: 'topbar-menu-item color-landmark' do %>
+            <span><%= t 'menu.landmarks' %></span>
+          <% end %>
+        <%# end %>
+        <%# if Settings.menu.include?('tours') %>
+          <%= link_to tours_path, class: 'topbar-menu-item color-tour' do %>
+            <span><%= t 'menu.tours' %></span>
+          <% end %>
+        <%# end %>
+        <%# if Settings.menu.include?('news') %>
+          <%= link_to news_index_path, class: 'topbar-menu-item color-news' do %>
+            <span><%= t 'menu.news' %></span>
+          <% end %>
+        <%# end %>
+      </div>
+      <a class="topbar-item" data-activate=".topbar-search" href="/pois">
+        <%= image_tag '/images/front_end/icons/search-gray.svg', class: 'icon' %>
+      </a>
+      <button type="button" class="topbar-item topbar-menu-handle navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <%= image_tag '/images/front_end/menu.svg', class: 'icon' %>
+      </a>
+    </nav>
+  </div>
+
+  <script>
+    document.body.setAttribute('data-hashook-dead-zone', document.querySelector('.topbar').offsetHeight);
+    document.body.style.paddingTop = document.body.getAttribute('data-hashook-dead-zone') + 'px';
+  </script>

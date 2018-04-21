@@ -1,0 +1,7 @@
+heroku config:set AWS_ACCESS_KEY_ID=AKIAIWEYMTHIJ5NJBHS
+
+heroku config:set AWS_SECRET_ACCESS_KEY=CfR8TdQXGEva90Pc32xSDJQEq+/g1E8EYFfExB1e
+
+heroku config:set S3_BUCKET=kentarosaas
+
+heroku config:set AWS_REGION=us-west-2

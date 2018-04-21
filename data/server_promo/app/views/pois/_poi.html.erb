@@ -1,0 +1,24 @@
+<% if controller_name == 'inicio' && action_name == 'home' %>
+                  <!--   <img src="<%= url_for(poi.avatar) %>" alt="..."> -->
+                  <%= image_tag poi.avatar.variant(resize: "1200x460") %>
+            <%= link_to poi_path(poi) do %>
+      <div class="container">
+            <div class="carousel-item-caption">
+              <span class="carousel-item-caption-tag color-place">PONTO TURÍSTICO</span>
+              <p>     <%= poi.name %>
+          </p>
+            </div>
+          </div>
+            <% end %>
+  
+       
+<% else %>
+    <div class="grid-cell span-12 skip-2-from-1">
+        <%= link_to poi_path(poi) do %>
+        <div class="landmark-card", style="background-image: url(<%=url_for(poi.avatar)%>)" >
+          <span class="landmark-card-name"><%= poi.name %></span>
+          </div>
+        <% end %>
+     </div>
+
+<% end  %>

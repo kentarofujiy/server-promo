@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="500px" height="500px" viewBox="0 0 500 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.3 (29802) - http://www.bohemiancoding.com/sketch -->
+    <title>pin-trip-1</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="pin-trip-1">
+            <g id="Group" transform="translate(68.000000, 0.000000)">
+                <path d="M182,0 C81.539,0 0.17,81.36 0.17,181.83 C0.17,329.57 182,500 182,500 C182,500 363.83,329.57 363.83,181.83 C363.702,81.36 282.333,0 182,0" id="Fill-16" fill="#4E4E4B"></path>
+                <path d="M319.555,181.54 C319.555,257.51 257.97,319.1 182,319.1 C106.03,319.1 44.445,257.51 44.445,181.54 C44.445,105.57 106.03,43.98 182,43.98 C257.97,43.98 319.555,105.57 319.555,181.54" id="Fill-17" fill="#FFFFFF"></path>
+                <path d="M202.414,259.05 L176.137,259.05 C176.137,214.17 173.406,168.3 177.031,123.53 C167.627,133.34 156.121,141.5 145.611,150.03 L132.417,133.37 L180.498,95.58 L202.414,95.58 L202.414,259.05" id="Fill-18" fill="#4E4E4B"></path>
+            </g>
+        </g>
+    </g>
+</svg>

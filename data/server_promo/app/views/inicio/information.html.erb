@@ -1,0 +1,278 @@
+<main class="content color-information">
+  <div class="content-filler-sm">
+  </div>
+
+  <header class="content-header">
+    <%= image_tag '/images/front-end/icons/pin-information.svg', class: 'content-header-icon icon-information' %>
+    <h1 class="content-header-title">Informações</h1>
+  </header>
+
+  <div class="content-tabs hide-on-small-screen">
+    <a href="#transporte" class="content-tabs-button">
+      Transporte
+    </a>
+    <a href="#como-chegar" class="content-tabs-button">
+      Como chegar
+    </a>
+    <a href="#telefones-uteis" class="content-tabs-button">
+      Telefones úteis
+    </a>
+    <a href="#dados-tecnicos" class="content-tabs-button">
+      Dados técnicos
+    </a>
+  </div>
+
+  <div class="content-frame">
+    <!-- <section class="section">
+      <h1 class="heading-one colored centered">Postos de informação</h1>
+      <div class="media grid skip-8">
+        <div class="media-item grid-cell span-6">
+          <div class="media-item-image">
+            <img src="images/concha.jpg">
+          </div>
+          <div class="media-item-description">
+            <h1>Centro da cidade</h1>
+            <p>
+              Rua Fulano de Tal, 1500 - Centro<br>
+              Telefone: 13 3456-7890<br>
+              <a href="#">Ver no Google Maps</a>
+            </p>
+          </div>
+        </div>
+        <div class="media-item grid-cell span-6">
+          <div class="media-item-image">
+            <img src="images/concha.jpg">
+          </div>
+          <div class="media-item-description">
+            <h1>Centro da cidade</h1>
+            <p>
+              Rua Fulano de Tal, 1500 - Centro<br>
+              Telefone: 13 3456-7890<br>
+              <a href="#">Ver no Google Maps</a>
+            </p>
+          </div>
+        </div>
+        <div class="media-item grid-cell span-6">
+          <div class="media-item-image">
+            <img src="images/concha.jpg">
+          </div>
+          <div class="media-item-description">
+            <h1>Centro da cidade</h1>
+            <p>
+              Rua Fulano de Tal, 1500 - Centro<br>
+              Telefone: 13 3456-7890<br>
+              <a href="#">Ver no Google Maps</a>
+            </p>
+          </div>
+        </div>
+        <div class="media-item grid-cell span-6">
+          <div class="media-item-image">
+            <img src="images/concha.jpg">
+          </div>
+          <div class="media-item-description">
+            <h1>Centro da cidade</h1>
+            <p>
+              Rua Fulano de Tal, 1500 - Centro<br>
+              Telefone: 13 3456-7890<br>
+              <a href="#">Ver no Google Maps</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <section class="section">
+      <h1 class="heading-one colored centered" data-hashook="transporte">Transporte</h1>
+
+      <!-- Aeroporto -->
+      <h2 class="heading-two colored centered skip-8" data-hashook="aeroporto-de-viracopos">Aeroporto Internacional de Viracopos</h2>
+      <figure class="picture skip-4">
+        <%= image_tag '/images/front-end/info-aeroporto-viracopos.jpg' %>
+      </figure>
+      <p class="skip-4">Localizado a 17 Km do centro de Campinas e a 95 Km do centro de São Paulo, o <strong>Aeroporto Internacional de Viracopos</strong> se destaca como um dos principais aeroportos do País. A presença de importantes companhias aéreas e a vasta conexão com diversos destinos nacionais e internacionais deixam o Aeroporto Internacional de Viracopos e a região de Campinas em situação privilegiada no que se refere a logística e acesso.</p>
+      <ul class="bullet-list skip-4">
+        <li>Endereço: Rodovia Santos Dumont, km 66 - Campinas (<a href="https://goo.gl/maps/FDLLengzmo22">Ver mapa</a>)</li>
+        <li>Telefone: <a href="tel:+551937255000">(19) 3725-5000</a></li>
+        <li>Site: <a href="http://www.viracopos.com">www.viracopos.com</a></li>
+      </ul>
+
+
+      <!-- Terminal rodoviário-->
+      <h2 class="heading-two colored centered skip-8" data-hashook="rodoviaria-ramos-de-azevedo">Terminal Intermodal Ramos de Azevedo</h2>
+      <figure class="picture skip-4">
+        <%= image_tag '/images/front-end/info-rodoviaria-ramos-de-azevedo.jpg' %>
+      </figure>
+      <p class="skip-4">O <strong>Terminal Intermodal Ramos de Azevedo</strong> está localizado no Bairro Vila Industrial na cidade de Campinas. Possui uma área total de 70 mil metros quadrados e três pavilhões, por esses motivos está entre os principais terminais rodoviários do estado de São Paulo. No total são 37 empresas de transporte que atuam no terminal que são responsáveis pela conexão de Campinas com importantes municípios brasileiros.</p>
+      <ul class="bullet-list skip-4">
+        <li>Endereço: Rua Dr. Pereira Lima – Vila Industrial – Campinas (<a href="https://goo.gl/maps/uoE5x17SEd42">Ver mapa</a>)</li>
+        <li>Telefone: <a href="tel:+551937312930">(19) 3731-2930</a></li>
+        <li>Site: <a href="http://www.rodoviariadecampinas.com">www.rodoviariadecampinas.com</a></li>
+      </ul>
+
+      <!-- Ônibus municipal-->
+      <h2 class="heading-two colored centered skip-8">Ônibus municipal</h2>
+      <figure class="picture skip-4">
+        <%= image_tag '/images/front-end/info-onibus.jpg' %>
+      </figure>
+      <p class="skip-4">Em Campinas, a passagem de ônibus municipal custa R$ 3,80. No site da <a href="http://www.emdec.com.br/ABusInf/"><abbr title="Empresa Municipal de Desenvolvimento de Campinas">Emdec</abbr></a>, você consegue localizar qual a melhor linha, os horários e onde estão os pontos de ônibus mais próximos.</p>
+
+      <!-- Taxi -->
+      <h2 class="heading-two colored centered skip-8">Taxi</h1>
+      <figure class="picture skip-4">
+        <%= image_tag "/images/front-end/info-taxi.jpg" %>
+      </figure>
+      <p class="skip-4"><strong>Modalidades Convencional e Acessível</strong> (Vigente desde 30/03/2015 – Decreto Municipal Nº 18.679/2015)</p>
+      <ul class="bullet-list skip-4">
+        <li>Bandeirada: R$ 4,85</li>
+        <li>Bandeira I: R$ 2,90 (2ª a 6ª feira, das 6 às 18 horas; Sábado, das 6 às 12 horas)</li>
+        <li>Bandeira II: R$ 3,75 (2ª a 6ª feira, das 18 às 6 horas; Sábado, das 12 às 24 horas; domingo e feriado, o dia todo)</li>
+        <li>Hora Parada: R$ 43,00</li>
+      </ul>
+      <p class="skip-4"><strong>Modalidade Executivo</strong> (Vigentes desde 30/03/2015 – Decreto Municipal Nº 18.680/2015)</p>
+      <ul class="bullet-list skip-4">
+        <li>Bandeirada: R$ 6,30</li>
+        <li>Bandeira I: R$ 3,75 (2ª a 6ª feira, das 6 às 18 horas; Sábado, das 6 às 12 horas)</li>
+        <li>Bandeira II: R$ 4,85 (2ª a 6ª feira, das 18 às 6 horas; Sábado, das 12 às 24 horas; domingo e feriado, o dia todo)</li>
+        <li>Hora Parada: R$ 56,00</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h1 class="heading-one colored centered" data-hashook="como-chegar">Como chegar</h1>
+      <ul class="bullet-list skip-4">
+        <li><strong>SP 348 - Rodovia dos Bandeirantes (Km 88)</strong><br>
+        Ao norte: Hortolândia, Sumaré, Nova Odessa, Cordeirópolis, Limeira, Santa Bárbara D"Oeste e Rodovia Anhanguera.
+        Ao sul: Valinhos, Itupeva, Jundiaí, Cajamar, Franco da Rocha, Caieiras, São Paulo.<br>
+        Autoban - <a href="tel:0800555550">0800-555-550</a></li>
+
+        <li><strong> SP 330 - Rodovia Anhanguera (Km 92, 95, 98 e 103)</strong><br>
+        Ao norte: Sumaré, Nova Odessa, Americana, Limeira, Ribeirão Preto e Triângulo Mineiro.<br>
+        Ao sul: Valinhos, Vinhedo, Louveira, Jundiaí, Cajamar, Osasco, São Paulo.<br>
+        Autoban - <a href="tel:0800555550">0800-555-550</a></li>
+
+        <li><strong> SP 65 - Rodovia Dom Pedro I (Km 132, 135 e 139)</strong><br>
+        Valinhos, Itatiba, Jarinú, Atibaia, Rodovia Fernão Dias, Bom Jesus dos Perdões, Nazaré Paulista, Igaratá, Jacareí, Rodovia Dutra, Rodovia Carvalho Pinto, Rodovia Tamoios (Litoral Norte).<br>
+        Dersa - <a href="tel:0800555510">0800-555-510</a></li>
+
+        <li><strong> SP 101- Rodovia Francisco Aguirre Proença (Campinas-Monte Mor)</strong><br>
+        Hortolândia e Monte Mor.</li>
+
+        <li><strong> Estrada Estadual Campinas-Paulínia</strong><br>
+        Rodovia General Milton Tavares de Lima Paulínia, Cosmópolis e Artur Nogueira.</li>
+
+        <li><strong> SP 340 - Rodovia Dr. Ademar Pereira de Barros (Campinas-Mogi Mirim / Km 114)</strong><br>
+        Ao norte: Jaguariúna, Holambra, Santo Antônio de Posse, Mogi Mirim, Mogi Guaçu, Estiva Gerbi, Aguaí, Casa Branca, Mococa e Sul de Minas.<br>
+        Renovias - <a href="tel:0800559696">0800-559-696</a></li>
+
+        <li><strong> SP 75 - Rodovia Santos Dumont (Km 77)</strong><br>
+        Aeroporto de Viracopos, Indaiatuba, Salto, Itu e Sorocaba.<br>
+        Colinas - <a href="tel:08007035080">0800-703-50-80</a></li>
+
+        <li><strong> Anel Viário Magalhães Teixeira (Campinas-Valinhos)</strong><br>
+        Ligação entre as rodovias Anhanguera - Km 86 - com Dom Pedro I - Km 128 - (Campinas- Valinhos).<br>
+        Dersa - <a href="tel:0800-555-510">0800-555-510</a></li>
+
+        <li><strong> Aeroporto Internacional de Viracopos</strong><br>
+        Rodovia Santos Dumont, Km 2,8 - Vila Aeroporto<br>
+        Fone: <a href="tel:+551937255000">(19) 3725-5000</a><br>
+        <a href="http://www.infraero.gov.br">www.infraero.gov.br</a></li>
+
+        <li><strong> Campo de Aviação dos Amarais (Aeroclube)</strong><br>
+        Av. dos Amarais, s/nº - Jd. Santa Mônica<br>
+        Fones: <a href="tel:+551932463220">(19) 3246-3220</a> - <a href="tel:+551932463109">(19) 3246-3109</a> - <a href="tel:+551932463140">(19) 3246-3140</a><br>
+        <a href="http://www.aeroclubedecampinas.com.br">www.aeroclubedecampinas.com.br</a></li>
+
+        <li><strong> Terminal Rodoviário Ramos de Azevedo</strong><br>
+        Rua Dr. Pereira Lima, s/n° - Vila Industrial<br>
+        Fone: <a href="tel:+551937312930">(19) 3731-2930</a><br>
+        <a href="http://www.socicam.com.br">www.socicam.com.br</a></li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h1 class="heading-one colored centered" data-hashook="telefones-uteis">Telefones úteis</h1>
+      <div class="grid skip-8">
+        <div class="grid-cell span-6">
+          <table class="table">
+            <tbody>
+              <tr>
+                <th><div class="table-icon"><%= image_tag '/images/front-end/info-ambulance.svg' %></div></th>
+                <td class="span-12">Ambulancia <abbr title="Serviço de Atendimento Móvel de Urgência">SAMU</abbr>: <br><a href="tel:192"><strong>192</strong></a></td>
+              </tr>
+              <tr>
+                <th><div class="table-icon"><%= image_tag '/images/front-end/info-police.svg' %></div></th>
+                <td>Polícia: <br><a href="tel:190"><strong>190</strong></a></td>
+              </tr>
+              <tr>
+                <th><div class="table-icon"><%= image_tag '/images/front-end/info-firetruck.svg' %></div></th>
+                <td>Bombeiros: <br><a href="tel:193"><strong>193</strong></a></td>
+              </tr>
+              <tr>
+                <th><div class="table-icon"><%= image_tag '/images/front-end/info-guard.svg' %></div></th>
+                <td>Guarda Civil Municipal: <br><a href="tel:153"><strong>153</strong></a></td>
+              </tr>
+              <tr>
+                <th><div class="table-icon"><%= image_tag '/images/front-end/info-emergency-management.svg' %></div></th>
+                <td>Defesa Civil: <br><a href="tel:199"><strong>199</strong></a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="grid-cell span-6">
+          <table class="table">
+            <tbody>
+              <tr>
+                <th><div class="table-icon"><%= image_tag '/images/front-end/info-highway-patrol.svg' %></div></th>
+                <td class="span-12">Polícia Rodoviária: <br><a href="tel:+551932571499"><strong>(19) 3257-1499</strong></a></td>
+              </tr>
+              <tr>
+                <th><div class="table-icon"><%= image_tag '/images/front-end/info-fed.svg' %></div></th>
+                <td>Polícia Federal: <br><a href="tel:+551933452200"><strong>(19) 3345-2200</strong></a></td>
+              </tr>
+              <tr>
+                <th><div class="table-icon"><%= image_tag '/images/front-end/info-eletricity-co.svg' %></div></th>
+                <td>Energia Elétrica (<abbr title="">CPFL</abbr> Paulista): <br><a href="tel:08000101010"><strong>0800-010-1010</strong></a></td>
+              </tr>
+              <tr>
+                <th><div class="table-icon"><%= image_tag '/images/front-end/info-water-supply.svg' %></div></th>
+                <td>Água (<abbr title="Sociedade de Abastecimento de Água e Saneamento SA">Sanasa</abbr>): <br><a href="tel:08007721195"><strong>0800-7721-195</strong></a></td>
+              </tr>
+              <tr>
+                <th><div class="table-icon"><%= image_tag '/images/front-end/info-customer-service.svg' %></div></th>
+                <td>Campinforma: <br><a href="tel:+551921222444"><strong>(19) 2122-2444</strong></a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h1 class="heading-one colored centered" data-hashook="dados-tecnicos">Dados técnicos</h1>
+      <table class="table skip-8">
+        <tbody>
+          <tr>
+            <th><div class="table-icon"><%= image_tag '/images/front-end/info-volt.svg' %></div></th>
+            <td class="span-12"><strong>Voltagem </strong><br>Em Campinas, a voltagem padrão das tomadas é 110V. Em alguns hotéis é possível encontrar tomadas 220V, que geralmente estão demarcadas.</td>
+          </tr>
+          <tr>
+            <th><div class="table-icon"><%= image_tag '/images/front-end/info-power-plug.svg' %></div></th>
+            <td><strong>Padrão de tomadas </strong><br>Para carregar seus aparelhos eletrônicos, fique atento ao <a href="http://www.inmetro.gov.br/qualidade/pluguestomadas/">padrão brasileiro de plugues e tomadas</a>.</td>
+          </tr>
+          <tr>
+            <th><div class="table-icon"><%= image_tag '/images/front-end/info-no-smoking.svg' %></div></th>
+            <td><strong>Regras para fumantes </strong><br>Fumar é proibido em todos os prédio públicos e em espaços fechados, inclusive em restaurantes, bares e hotéis. Nesses locais, é possível encontrar área destinada a fumantes.</td>
+          </tr>
+          <tr>
+            <th><div class="table-icon"><%= image_tag '/images/front-end/info-tip.svg' %></div></th>
+            <td><strong>Gorjeta </strong><br>No Brasil, costuma-se pagar uma gorjeta de 10% do valor da conta em bares e restaurantes para os serviços de garçons. A taxa não é obrigatória.</td>
+          </tr>
+          <tr>
+            <th><div class="table-icon"><%= image_tag '/images/front-end/info-drive.svg' %></div></th>
+            <td><strong>Lei seca </strong><br>Conduzir veículo automotor com capacidade psciomotora alterada em razão da influência de álcool ou de outra substância psicoativa que determine dependência implica em detenção de 6 meses a 3 anos, multa de R$ 1.915,40 e suspensão ou proibição de se obter a permissão ou a habilitação para dirigir veículo.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </div>
+</main>

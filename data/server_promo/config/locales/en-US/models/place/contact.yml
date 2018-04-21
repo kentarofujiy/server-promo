@@ -1,0 +1,9 @@
+en-US:
+  place/contact:
+    mediums:
+      phone: Phone
+      whatsapp: WhatsApp
+      facebook: Facebook
+      twitter: Twitter
+      site: Site
+      email: E-mail

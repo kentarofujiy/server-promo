@@ -1,0 +1,25 @@
+en-US:
+  address:
+    name: &name
+      one: Address
+      other: Adresses
+      gender: m
+    attributes: &attributes
+      route: Address
+      extension: Extension
+      neighborhood: Neighborhood
+      postcode: Postcode
+      locality: Locality
+      region: Region
+      latitude: Latitude
+      longitude: Longitude
+    formatted:
+      default: "%{full} - %{neighborhood}"
+      long: "%{full} - %{neighborhood} - %{locality}, %{region}"
+  activerecord:
+    models:
+      address:
+        <<: *name
+    attributes:
+      address:
+        <<: *attributes

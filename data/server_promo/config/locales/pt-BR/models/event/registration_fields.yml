@@ -1,0 +1,6 @@
+pt-BR:
+  event/registration_fields:
+    options:
+      hidden: Esconder
+      optional: Opcional
+      required: Obrigatório

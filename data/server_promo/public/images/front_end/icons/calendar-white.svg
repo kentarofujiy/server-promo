@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="500px" height="500px" viewBox="0 0 500 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.3 (29802) - http://www.bohemiancoding.com/sketch -->
+    <title>calendar-white</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="calendar-white" fill="#FFFFFF">
+            <path d="M175,225 L125,225 L125,275 L175,275 L175,225 L175,225 Z M275,225 L225,225 L225,275 L275,275 L275,225 L275,225 Z M375,225 L325,225 L325,275 L375,275 L375,225 L375,225 Z M175,314.820359 L125,314.820359 L125,364.820359 L175,364.820359 L175,314.820359 L175,314.820359 Z M275,314.820359 L225,314.820359 L225,364.820359 L275,364.820359 L275,314.820359 L275,314.820359 Z M375,314.820359 L325,314.820359 L325,364.820359 L375,364.820359 L375,314.820359 L375,314.820359 Z M425,50 L400,50 L400,0 L350,0 L350,50 L150,50 L150,0 L100,0 L100,50 L75,50 C47.25,50 25.25,72.5 25.25,100 L25,450 C25,477.5 47.25,500 75,500 L425,500 C452.5,500 475,477.5 475,450 L475,100 C475,72.5 452.5,50 425,50 L425,50 Z M425,450 L75,450 L75,175 L425,175 L425,450 L425,450 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg>

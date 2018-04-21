@@ -1,0 +1,26 @@
+pt-BR:
+  event:
+    name: &name
+      one: Evento
+      other: Eventos
+      gender: m
+    attributes: &attributes
+      name: Nome
+      category: Categoria
+      schedule: Horário
+      place: Local
+      registration: Opções da Inscrição
+    categories:
+      sporting: Desportivos
+      gastronomic: Gastronômicos
+      cultural: Culturais
+      educational: Educacionais e Capacitação
+      corporative: Corporativos
+      scientific: Técnicos Cientificos
+  activerecord:
+    models:
+      event:
+        <<: *name
+    attributes:
+      event:
+        <<: *attributes

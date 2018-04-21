@@ -1,0 +1,96 @@
+<%= form_with(model: tour, local: true, :html => {class: "form-horizontal", role: "form"})  do |form| %>
+  <% if tour.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(tour.errors.count, "error") %> prohibited this tour from being saved:</h2>
+
+      <ul>
+      <% tour.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+<div class="container">
+<h1 align="center">Novo Roteiro</h1>
+<div class="form-group">
+        <div class="control-label col-sm-2">
+            <%= form.label :name %>
+        </div>
+        <div class="col-sm-8">
+            <%= form.text_field :name, id: :group_name, class: "form-control", placeholder: "Nome da Coleção", autofocus: true %>
+        </div>
+
+    </div>
+<div class="form-group">
+    <div class="control-label col-sm-2">
+    <%= form.label :avatar %>
+</div>
+   <div class="col-sm-8">
+    <%= form.file_field :avatar, class: "form-control" %>
+    </div>
+</div>
+<div class="form-group">
+        <div class="control-label col-sm-2">
+            <%= form.label "Público-Alvo" %>
+        </div>
+        <div class="col-sm-8">
+            <%= form.text_field :audience, id: :group_audience, class: "form-control", placeholder: "Público-Alvo", autofocus: true %>
+        </div>
+
+    </div>
+<div class="form-group">
+        <div class="control-label col-sm-2">
+            <%= form.label "Duração" %>
+        </div>
+        <div class="col-sm-8">
+            <%= form.text_field :duration, id: :group_duration, class: "form-control", placeholder: "Duração do Roteiro", autofocus: true %>
+        </div>
+
+    </div>
+<div class="form-group">
+        <div class="control-label col-sm-2">
+            <%= form.label "Distância" %>
+        </div>
+        <div class="col-sm-8">
+            <%= form.text_field :distance, id: :group_distancia, class: "form-control", placeholder: "Distância do Roteiro", autofocus: true %>
+        </div>
+
+    </div>
+<div class="form-group">
+        <div class="control-label col-sm-2">
+            <%= form.label "Intensidade" %>
+        </div>
+        <div class="col-sm-8">
+            <%= form.text_field :intensity, id: :group_intesidade, class: "form-control", placeholder: "Intesidade do Roteiro", autofocus: true %>
+        </div>
+
+    </div>
+
+ <div class="form-group">
+        <div class="control-label col-sm-2">
+            <%= form.label "Descrição" %>
+        </div>
+        <div class="col-sm-8">
+            <%= form.text_field :description, id: :group_description, class: "form-control", placeholder: "Descrição da Coleção", autofocus: true %>
+        </div>
+
+    </div>
+<div class="form-group">
+        <div class="control-label col-sm-2">
+            <%= form.label "Detalhes" %>
+        </div>
+        <div class="col-sm-8">
+            <%= form.hidden_field :details, id: :tour_details %>
+        <trix-editor input="tour_details"></trix-editor>
+
+        </div>
+    
+
+    </div>
+  <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+            <%= form.submit "Salvar", class: 'btn btn-primary btn-lg' %>
+        </div>
+    </div>
+<% end %>
+</div>

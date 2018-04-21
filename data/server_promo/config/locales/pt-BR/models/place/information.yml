@@ -1,0 +1,111 @@
+pt-BR:
+  place/information:
+    attributes:
+      local: Local
+      opening_hours: Horário de funcionamento      
+      rating: Avaliação
+      parking_lot: Estacionamento
+      cuisine: Especialidade culinária
+      payment_methods: Formas de pagamento
+      price_level: Preço
+      target_audience: Público alvo
+      accepts_reservation: Aceita reservas
+      allows_pets: Aceita animais
+      play_area: Espaço infantil
+      toilets: Banheiros
+      accessibility: Acessibilidade
+      wifi: Wi-Fi
+      contacts: Contatos      
+    cuisines:
+      african: Africana
+      german: Alemã
+      american: Americana
+      arabic: Árabe
+      argentine: Argentina
+      asian: Asiática
+      australian: Australiana
+      bar: Bar
+      brazilian: Brasileira
+      north_brazilian: Brasileira Regional - Norte
+      southeast_brazilian: Brasileira Regional - Sudeste
+      northeast_brazilian: Brasileira Regional - Nordeste
+      south_brazilian: Brasileira Regional - Sul
+      midwest_brazilian: Brasileira Regional - Centro-Oeste
+      british: Britânica
+      coffee: Café
+      chilean: Chilena
+      chinese: Chinesa
+      barbecue: Churrasco
+      contemporary: Contemporânea
+      korean: Coreana
+      delicatessen: Delicatessen
+      spanish: Espanhola
+      european: Europeia
+      fast_food: Fast Food
+      french: Francesa
+      seafood: Frutos do Mar
+      fusion: Fusion
+      greek: Grega
+      grilled: Grelhados
+      dutch: Holandesa
+      indian: Indiana
+      indonesian: Indonesiana
+      international: Internacional
+      irish: Irlandesa
+      italian: Italiana
+      japanese: Japonesa
+      snack_bar: Lanchonete
+      latina: Latina
+      lebanese: Libanesa
+      mediterranean: Mediterrânea
+      mexican: Mexicana
+      middle_eastern: Oriente Médio
+      peruvian: Peruana
+      pizza: Pizza
+      portuguese: Portuguesa
+      pub: Pub
+      pub_with_artisan_beer: Pub com Cerveja Artesanal
+      pub_with_restaurant: Pub com Restaurante
+      healthy: Saudável
+      soup: Sopa
+      steakhouse: Steakhouse
+      street_food: Street Food
+      swiss: Suíça
+      south_american: Sul-americana
+      sushi: Sushi
+      thai: Tailandesa
+      wine_bar: Wine Bar
+    parking_lot:
+      none: Nenhum
+      paid: Pago
+      free: Gratuito
+    payment_methods:
+      check: Cheque
+      bank_card: Cartão de Débito
+      credit_card: Cartão de Crédito
+      meal_ticket: Vale Refeição
+      paypal: PayPal
+    price_levels:
+      free: Grátis
+      inexpensive: Econômico
+      moderate: Mediano
+      expensive: Caro
+      very_expensive: Muito caro
+    target_audience:
+      children: Crianças
+      youth: Jovens
+      adults: Adultos
+      seniors: Idosos
+    accessibility:
+      braille_menu: Cardápio em braille
+      special_service: Atendimento diferenciado
+      mobility_access: Acesso e circulação
+      accessible_toilets: Sanitários adaptados
+      accessible_desk: Balcão de atendimento
+      accessible_tables: Mesas para refeições
+      reserved_seats: Assentos reservados em auditórios
+      accessible_lodging: Locais de hospedagem
+      parking_spot_for_disability: Vaga de estacionamento para pessoas com deficiência
+      parking_spot_for_elderly: Vaga de estacionamento para pessoas idosas
+      accessibility_signaling: Sinalização indicando acesso aos espaços
+      fortified_seats: Cadeira para pessoas obesas

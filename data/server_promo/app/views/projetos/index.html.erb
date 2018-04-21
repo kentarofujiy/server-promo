@@ -1,0 +1,8 @@
+<div class="jumbotron">
+<h1>Lista Projetos</h1>
+<%= link_to "Cadastrastrar novo Projeto", new_projeto_path %>
+</div>
+<%= render 'projeto', obj: @projetos %>
+<div align="center">
+<%= paginate @projetos %>
+</div>

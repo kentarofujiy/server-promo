@@ -1,0 +1,13 @@
+pt-BR:
+  welcome:
+    index:
+      title: Página Inicial
+      content:
+        title: Ainda não sabe o que fazer na cidade?
+        subtitle: Navegue pelos roteiros abaixo e descubra.
+      about:
+        title: Campinas é uma cidade surpreendente.
+        subtitle: Reconhecida como a capital brasileira da ciência, tecnologia e inovação.
+        number_of_inhabitants_html: Número atual<br> de habitantes
+        hdi_in_campinas_html: <abbr title="Índice de Desenvolvimento Humano">IDH</abbr> em<br>campinas
+        expectancy_of_life_html: Expectativa<br>  de vida

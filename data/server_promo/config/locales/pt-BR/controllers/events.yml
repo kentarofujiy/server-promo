@@ -1,0 +1,9 @@
+pt-BR:
+  events:
+    index:
+      title: Calendário de Eventos
+      no_event: Nenhum evento marcado para este mês.
+    show:
+      about_event: Sobre o Evento
+    period: "De %{start} até %{end}"
+    target: "%B de %Y"

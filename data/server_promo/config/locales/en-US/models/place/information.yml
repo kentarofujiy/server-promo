@@ -1,0 +1,111 @@
+en-US:
+  place/information:
+    attributes:
+      local: Local
+      opening_hours: Opening Hours
+      rating: Rating
+      parking_lot: Parking
+      cuisine: Specialty
+      payment_methods: Payment
+      price_level: Price
+      target_audience: Target Audience
+      accepts_reservation: Accept reservations
+      allows_pets: Pets allowed
+      play_area: children's play area
+      toilets: Toilets
+      accessibility: Accessibility
+      wifi: Wi-Fi
+      contacts: Contacts
+    cuisines:
+      african: African
+      german: German
+      american: American
+      arabic: Arabic
+      argentine: Argentine
+      asian: Asian
+      australian: Australian
+      bar: Bar
+      brazilian: Brazilian
+      north_brazilian: Brazilian Regional - North
+      southeast_brazilian: Brazilian Regional - Southeast
+      northeast_brazilian: Brazilian Regional - Northeast
+      south_brazilian: Brazilian Regional - South
+      midwest_brazilian: Brazilian Regional - Midwest
+      british: British
+      coffee: Coffe
+      chilean: Chilean
+      chinese: Chinese
+      barbecue: Barbecue
+      contemporary: Conteporary
+      korean: Korean
+      delicatessen: Delicatessen
+      spanish: Spanish
+      european: European
+      fast_food: Fast Food
+      french: French
+      seafood: Seafood
+      fusion: Fusion
+      greek: Greek
+      grilled: Grilled
+      dutch: Dutch
+      indian: Indian
+      indonesian: Indonesian
+      international: International
+      irish: Irish
+      italian: Italian
+      japanese: Japanese
+      snack_bar: Snack bar
+      latina: Latina
+      lebanese: Lebanese
+      mediterranean: Mediterranean
+      mexican: Mexican
+      middle_eastern: Middle East
+      peruvian: Peruvian
+      pizza: Pizza
+      portuguese: Portuguese
+      pub: Pub
+      pub_with_artisan_beer: Pub with Artisan Beer
+      pub_with_restaurant:  Pub with Restaurant
+      healthy: Healthy
+      soup: Soup
+      steakhouse: Steakhouse
+      street_food: Street Food
+      swiss: Switzerland
+      south_american: South American
+      sushi: Sushi
+      thai: Thai
+      wine_bar: Wine Bar
+    parking_lot:
+      none: None
+      paid: Paid
+      free: Free
+    payment_methods:
+      check: Check
+      bank_card: Debit Card
+      credit_card: Credit Card
+      meal_ticket: Meal Voucher
+      paypal: PayPal
+    price_levels:
+      free: Free
+      inexpensive: Inexpensive
+      moderate: Moderate
+      expensive: Expensive
+      very_expensive: Very Expensive
+    target_audience:
+      children: Children
+      youth: Youth
+      adults: Adults
+      seniors: Seniors
+    accessibility:
+      braille_menu: Braille menu
+      special_service: Special Service
+      mobility_access: Mobility Access
+      accessible_toilets: Adapted Toilets
+      accessible_desk: Service Desk
+      accessible_tables: Dining tables
+      reserved_seats: Reserved seats in auditoriums
+      accessible_lodging: Hosting Locations
+      parking_spot_for_disability: Parking space for people with disabilities
+      parking_spot_for_elderly: Parking space for the elderly
+      accessibility_signaling: Signaling indicating access to spaces
+      fortified_seats: Chair for obese people

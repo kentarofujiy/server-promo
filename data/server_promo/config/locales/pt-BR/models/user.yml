@@ -1,0 +1,22 @@
+pt-BR:
+  user:
+    name: &name
+      one: Usuário
+      other: Usuários
+      gender: m
+    attributes: &attributes
+      name: Nome
+      password: Senha
+      password_confirmation: Confirmação de senha
+    roles:
+      regular: Usuário
+      editor: Editor
+      moderator: Moderador
+      administrator: Administrador
+  activerecord:
+    models:
+      user:
+        <<: *name
+    attributes:
+      user:
+        <<: *attributes

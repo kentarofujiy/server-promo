@@ -1,0 +1,55 @@
+<style>
+  .map-cards-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  }
+</style>
+
+<div class="map map-search">
+      <%= form_tag(pois_path, :method => "get", id: "search-form", class:"map-search-form") do %>
+        <%= text_field_tag :q, params[:q], placeholder: "Buscar Lugares", class:"map-search-form-field busca-poi" %>
+      <%= submit_tag "Buscar", :q=> nil,  class:"map-search-form-button" %>
+      <% end %>
+</div>
+
+ <%= content_tag :div, class: "map-container", id: "map", data: { pois: @map_pois.to_json(methods: [:address]) } do -%>
+  <% end -%>
+<div class="container">
+<div class="map-cards-wrapper">
+      <a href="<%= path_to_prev_page @map_pois %>" >
+        <div class="map-carousel-control-previous">
+          <%= image_tag '/images/front_end/icons/chevron-left-white.svg', class: 'map-carousel-control-previous-chevron' %>
+        </div>
+        </a>
+        <% @map_pois.each do |poi| %>
+
+
+<div class="map-carouseĺ-item">
+  <%= link_to poi_path(poi), class: 'place-card' do %>
+  <div class="place-card-image" style="background-image:url(<%= url_for(poi.avatar) %>)" >&nbsp;</div>
+    <div class="place-card-name"><%= poi.name %></div>
+    <div class="place-card-address"><%= poi.address %></div>
+    <%# if place.schedule.any? %>
+      <%# if place.open? %>
+        <div class="place-card-status-open">
+          <%= image_tag '/images/front_end/icons/open.svg', class: 'place-card-status-icon' %>
+          Aberto
+        </div>
+      <%# else %>
+        <!-- <div class="place-card-status-closed"> -->
+          <%#= image_tag '/images/front_end/icons/closed-gray.svg', class: 'place-card-status-icon' %>
+        <!--  Fechado
+        </div> -->
+      <%# end %>
+  <% end %>
+
+  </div>
+<% end %>
+      <a href="<%= path_to_next_page @map_pois %>" >
+        <div class="map-carousel-control-next" data-carousel-control-next>
+          <%= image_tag '/images/front_end/icons/chevron-right-white.svg', class: 'map-carousel-control-next-chevron' %>
+        </div>
+      </a>
+</div>
+</div>

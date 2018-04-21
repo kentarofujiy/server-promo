@@ -1,0 +1,13 @@
+pt-BR:
+  tours:
+    index:
+      title: Roteiros
+    card_duration:
+      html: <strong>%{value}</strong> de tempo estimado
+    card_distance:
+      html: <strong>%{value}km</strong> de trajeto total
+    tab_duration: Tempo estimado
+    tab_distance: Trajeto total
+    tab_audience: Público ideal
+    tab_intensity: Esforço físico
+    about_the_tour: Sobre o Roteiro

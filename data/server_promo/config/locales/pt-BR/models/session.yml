@@ -1,0 +1,15 @@
+pt-BR:
+  session:
+    name: &name
+      one: Sessão
+      other: Sessões
+      gender: f
+    attributes: &attributes
+      password: Senha
+  activemodel:
+    models:
+      session:
+        <<: *name
+    attributes:
+      session:
+       <<: *attributes

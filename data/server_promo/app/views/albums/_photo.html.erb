@@ -1,0 +1,16 @@
+<li>
+    <div class="media">
+      <div class="media-left">
+        <%= image_tag photo.image_url.to_s, size: 150, class: "img-thumbnail file-upload-preview media-object", id: "album-photo-preview-#{idx}" %>
+      </div>
+      <div class="media-body">
+        <div class="form-group">
+          <%= hidden_field_tag "album[photos_attributes][#{idx}][image]",id: "album-photo-upload-result-#{idx}" %>
+          <%= file_field_tag "album[photos_attributes][#{idx}][image]", id: "album-photo-field-#{idx}", data: { preview_element: "album-photo-preview-#{idx}", upload_result_element: "album-photo-upload-result-#{idx}"} %>
+        </div>
+        <%= hidden_field_tag "album[photos_attributes][#{idx}][id]", photo.id if photo.id %>
+        Remove photo: <%= check_box_tag "album[photos_attributes][#{idx}][_destroy]", value: true %>
+
+      </div>
+    </div>
+  </li>

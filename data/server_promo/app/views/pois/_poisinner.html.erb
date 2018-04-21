@@ -1,0 +1,4 @@
+  <%= link_to poi_path(poi), class: 'landmark-card', style: "background-image:url(<%= url_for(poi.avatar) %>)" do %>
+    <span class="landmark-card-name"><%= poi.name %></span>
+  <% end %>
+

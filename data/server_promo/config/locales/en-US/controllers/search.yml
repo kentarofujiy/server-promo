@@ -1,0 +1,18 @@
+en-US:
+  search:
+    index:
+      title: Search
+      search: Search...  
+    results:
+      zero: No results were found with the search term.
+      one: We found a result with the search term.
+      other: '%{count} results were found with the search term.'
+      display:
+        html: Displaying <strong>%{count} %{model}</strong> of %{total} found.           
+      see_all_in_index: See all in the index
+      see_all_on_map: See all on the map
+      see_all_on_calendar: See everyone on the calendar
+    filters:
+      title: Filters
+      what_are_you_looking: What are you looking for?
+      search_for: Search for...

@@ -1,0 +1,32 @@
+en-US:
+  place:
+    name: &name
+      one: Place
+      other: Places
+      gender: m
+    attributes: &attributes
+      address: Address
+      name: Name
+      categories: Categories
+      schedule: Schedule
+      contact: Contact
+    formatted_schedule: "%{workdays} - das %{open_time} às %{close_time}"
+    formatted_round_the_clock_schedule: "%{workdays} - 24 hours"
+    categories:
+      food: Food
+      lodging: Lodging
+      entertainment: Entertainment
+      poi: Poi
+      retail: Retail
+      venue: Events & Business
+      transportation: Transport
+      services: Services
+    open: Open now
+    close: Closed
+  activerecord:
+    models:
+      place:
+        <<: *name
+    attributes:
+      place:
+        <<: *attributes

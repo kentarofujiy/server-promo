@@ -1,0 +1,9 @@
+en-US:
+  event/registration_specifics:
+    attributes: &attributes
+      fee: Fee
+      limit: Limit
+  activemodel:
+    attributes:
+      event/registration_specifics:
+        <<: *attributes

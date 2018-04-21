@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="500px" height="500px" viewBox="0 0 500 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.3 (29802) - http://www.bohemiancoding.com/sketch -->
+    <title>closed-gray</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="closed-gray" fill="#D3D3D3">
+            <path d="M126.9986,330.896584 C111.835253,307.732551 103,280.09797 103,250.5 C103,169.375 169.375,103 250.5,103 C280.09797,103 307.732551,111.835253 330.896584,126.9986 L126.9986,330.896584 Z M169.285724,373.462273 C192.615901,388.95512 220.552964,398 250.5,398 C331.625,398 398,331.625 398,250.5 C398,220.552964 388.95512,192.615901 373.462273,169.285724 L169.285724,373.462273 Z M250,50 C140,50 50,140 50,250 C50,360 140,450 250,450 C360,450 450,360 450,250 C450,140 360,50 250,50 Z" id="Combined-Shape-Copy"></path>
+        </g>
+    </g>
+</svg>

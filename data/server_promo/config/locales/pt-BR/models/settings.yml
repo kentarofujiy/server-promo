@@ -1,0 +1,10 @@
+pt-BR:
+  settings:
+    name: &name
+      one: Configurações
+      other: Configurações
+      gender: f
+  activemodel:
+    models:
+      settings:
+        <<: *name

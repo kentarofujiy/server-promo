@@ -1,0 +1,22 @@
+en-US:
+  user:
+    name: &name
+      one: User
+      other: Users
+      gender: m
+    attributes: &attributes
+      name: Name
+      password: Password
+      password_confirmation: CPassword Confirmation
+    roles:
+      regular: User
+      editor: Editor
+      moderator: Moderator
+      administrator: Admin
+  activerecord:
+    models:
+      user:
+        <<: *name
+    attributes:
+      user:
+        <<: *attributes

@@ -1,0 +1,15 @@
+en-US:
+  place_list:
+    name: &name
+      one: List of places
+      other: List of places
+      gender: f
+    attributes: &attributes
+      name: Name
+  activerecord:
+    models:
+      place_list:
+        <<: *name
+    attributes:
+      place_list:
+        <<: *attributes

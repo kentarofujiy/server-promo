@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<main class="content color-news">
+  <div class="content-filler-lg">
+  </div>
+
+  <header class="content-header">
+    <%= image_tag '/images/front_end/icons/pin-news.svg', class: 'content-header-icon' %>
+    <h1 class="content-header-title">
+      <%= t 'news.index.title' %>
+    </h1>
+  </header>
+
+  <div class="content-retreat">
+    <div class="masonry">
+      <% @news.each do |news| %>
+<%= link_to news, class: 'news-card' do %>
+  <%# if news.image.present? %>
+    <div class="news-card-image">
+      <%= image_tag news.avatar %>
+    </div>
+  <%# end %>
+  <h1 class="news-card-title">
+    <%= news.title %>
+  </h1>
+  <div class="news-card-excerpt">
+    <%#= markdown_to_html news.excerpt.to_s %>
+<%= news.body %>
+  </div>
+<% end %>
+ <td><%= link_to 'Show', news %></td>
+        <td><%= link_to 'Edit', edit_news_path(news) %></td>
+        <td><%= link_to 'Destroy', news, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+
+        </div>
+      <% end %>
+    </div>
+  </div>
+</main>
+
+<%= link_to 'New News', new_news_path %>

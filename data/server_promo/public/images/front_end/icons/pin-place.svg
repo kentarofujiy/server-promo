@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="500px" height="500px" viewBox="0 0 500 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.3 (29802) - http://www.bohemiancoding.com/sketch -->
+    <title>pin-guide-map</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="pin-guide-map">
+            <g id="Center-Pin" transform="translate(102.000000, 0.000000)">
+                <path d="M146,0 C65.63,0 0.54,65.09 0.54,145.46 C0.54,263.66 146,400 146,400 C146,400 291.46,263.66 291.46,145.46 C291.36,65.09 226.27,0 146,0" id="Pin" fill="#3769A4"></path>
+                <path d="M214.14,137 C214.14,174.63 183.63,205.13 146,205.13 C108.37,205.13 77.86,174.63 77.86,137 C77.86,99.36 108.37,68.86 146,68.86 C183.63,68.86 214.14,99.36 214.14,137" id="Hole" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>

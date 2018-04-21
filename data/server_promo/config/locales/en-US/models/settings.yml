@@ -1,0 +1,10 @@
+en-US:
+  settings:
+    name: &name
+      one: Configuration
+      other: Settings
+      gender: f
+  activemodel:
+    models:
+      settings:
+        <<: *name

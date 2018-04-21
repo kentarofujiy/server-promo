@@ -1,0 +1,84 @@
+<style>
+#mapin {
+  height: 400px
+}
+</style>
+<p id="notice"><%= notice %></p>
+<main class="content color-place">
+  <%= content_tag :div, id: "mapin" do -%>
+  <% end -%>
+  <!-- <div class="content-filler-sm"></div> -->
+  <header class="content-header">
+    <%= image_tag '/images/front_end/icons/pin-place.svg', class: 'content-header-icon' %>
+    <h1 class="content-header-title">  <%= @poi.name %></h1>
+  </header>
+  <section class="container row">
+    <div  class="col-md-6">
+      <%= form_tag(pois_path, :method => "get", id: "search-form", class:"form-inline row") do %>
+        <%= text_field_tag :q, params[:q], placeholder: "Buscar Lugares", class:"form-control col-md-10 busca-poi" %>
+        <%= submit_tag "Buscar", :q=> nil,  class:"btn btn-primary col-md-2" %>
+      <% end %>
+    </div>
+    <div  class="col-md-6">
+      <%#= link_to 'Criar Estabelecimento', new_poi_path, class:"btn btn-success" %>
+      <%#= link_to 'Refazer a busca', "", id: "redo-search", class:"btn btn-warning" %>
+    </div>
+  </section>
+  <br>
+  <div class="content-frame">
+    <div class="place">
+      <div class="row">
+        <div class="poi-detail-main-info col-md-9">
+          <img class="poi-detail-main-photo" src="<%= url_for(@poi.avatar) %>" alt="...">
+          <br>
+          <p>
+            <strong>Acessibilidade:</strong>
+            <%= @poi.acessibilidade %>
+          </p>
+          <p>
+            <strong>Endereço:</strong>
+            <%= @poi.address %>
+          </p>
+          <% if @poi.categories.any? %>
+            <p>Categorias: <%= render @poi.categories %></p>
+          <% end %>
+          <% if @poi.tours.any? %>
+            <p>Roteiros: <%= render @poi.tours %></p>
+          <% end %>
+          <% if @poi.groups.any? %>
+            <p>Coleções: <%= render @poi.groups %></p>
+          <% end %>
+                 <% if @poi.landmarks.any? %>
+            <p>Landmark: <%= render @poi.landmarks %></p>
+          <% end %>
+          <%= link_to 'Edit', edit_poi_path(@poi) %> |
+          <%= link_to 'Back', pois_path %>
+        </div>
+    <div class="links-sidebar col-md-3">
+      <%= render "categories/categories_side_menu" %>
+ <%= render "groups/groups_side_menu" %>
+
+    </div>
+  </div>
+  </div>
+  </div>
+</main>
+<script>
+   var map = new GMaps({
+        div: '#mapin',
+        lat: <%= @poi.latitude %>,	
+        lng: <%= @poi.longitude %>
+    });
+    map.addMarker({
+        lat:    <%= @poi.latitude %>,	
+        lng: <%= @poi.longitude %>,
+  title: '<%= @poi.name %>',
+  infoWindow: { 
+            content: `<p><%= @poi.name %>
+            <h3><%= @poi.string %></h3>
+            <a href='/pois/<%=@poi.id %>'><%= @poi.address %></a>
+            </p>`
+        },
+});
+
+</script>

@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+<main class="content color-place">
+    <div class="content-filler-lg"></div>
+
+
+  <header class="content-header">
+    <%= image_tag '/images/front_end/icons/pin-place.svg', class: 'content-header-icon' %>
+    <h1 class="content-header-title">Coleções</h1>
+  </header>
+
+
+<section class="container row">
+   
+
+<% @groups.each do |group| %>
+
+  <div class="col-sm-6 col-md-4">
+<%= link_to group_path(group), class: 'place-collection' do %>
+  <%= image_tag group.avatar, class: 'place-collection-image' %>
+  <span class="place-collection-legend">Coleção</span>
+  <span class="place-collection-name"><%= group.name %></span>
+ <%#= link_to 'Destroy', group, method: :delete, data: { confirm: 'Are you sure?' } %>
+<% end %>
+
+</div>   
+<% end %> 
+
+</section>
+</main>

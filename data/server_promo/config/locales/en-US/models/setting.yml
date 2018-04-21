@@ -1,0 +1,10 @@
+en-US:
+  setting:
+    name: &name
+      one: Configuration
+      other: Settings
+      gender: f
+  activerecord:
+    models:
+      setting:
+        <<: *name

@@ -1,0 +1,33 @@
+<%= content_tag :tr, 'data-href' => edit_place_path(place) do %>
+  <td>
+    <div class="truncate">
+      <%= place.name %>
+    </div>
+    <div class="truncate small quiet">
+      <% if place.physical? %>
+        <%= place.address.formatted %>
+      <% else %>
+        Não possui endereço físico
+      <% end %>
+    </div>
+  </td>
+  <td>
+    <% if place.categories.present? %>
+      <small><%= formatted_place_categories(place) %></small>
+    <% else %>
+      -
+    <% end %>
+  </td>
+  <td>
+    <%= time_tag place.updated_at, title: l(place.updated_at) do %>
+      <%= t 'datetime.time_ago', time: time_ago_in_words(place.updated_at) %>
+    <% end %>
+  </td>
+  <td>
+    <% if place.active %>
+      <span class="positive">Ativo</span>
+    <% else %>
+      <span class="negative">Inativo</span>
+    <% end %>
+  </td>
+<% end %>

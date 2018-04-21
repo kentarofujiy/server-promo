@@ -1,0 +1,60 @@
+<% if @projeto.errors.any? %>
+<strong>Por favor, corrija os seguintes erros:</strong>
+<ul>
+<% @projeto.errors.full_messages.each do |msg| %>
+<li><%= msg %></li>
+<% end %>
+</ul>
+<% end %>
+
+
+<%= form_for @projeto do |m| %>
+
+<p>
+    <%= m.label :nome %><br/>
+    <%= m.text_field :nome %>
+</p>
+<p>
+    <%= m.label :especialidade %><br/>
+    <%= m.text_field :especialidade %>
+</p>
+<p>
+    <%= m.label :endereco %><br/>
+    <%= m.text_field :endereco %>
+</p>
+<p>
+    <%= m.label :telefone %><br/>
+    <%= m.text_field :telefone %>
+</p>
+<p>
+    <%= m.label :email %><br/>
+    <%= m.text_field :email %>
+</p>
+
+<p>
+    <%= m.collection_check_boxes :category_ids, Category.all, :id, :name do |cb| %>
+    <% cb.label(class: "checkbox-inline input_checkbox") {cb.check_box(class: "checkbox") + cb.text} %>
+    <% end %>
+</p>
+
+   <div class="control-group">
+    <%= m.label :name, :class => 'control-label' %>
+    <div class="controls">
+      <%= m.text_field :nome, :class => 'form-control' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= m.label :upload, value: 'File to upload', :class => 'control-label' %>
+    <div class="controls">
+      <%= m.file_field :upload, :class => 'form-control' %>
+    </div>
+  </div>
+
+
+
+<%= m.submit %>
+
+<% end %>
+<hr>
+</br>
+<button type="button" class="btn btn-default"> <%= link_to "Voltar a Lista", projetos_path %> </button>

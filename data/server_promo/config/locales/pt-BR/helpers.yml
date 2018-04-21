@@ -1,0 +1,40 @@
+pt-BR:
+  helpers:
+    yes_or_no:
+      "true": Sim
+      "false": Não
+    are_you_sure: Você tem certeza?
+    select:
+      prompt: Por favor selecione
+    submit:
+      create: Salvar
+      submit: Salvar
+      update: Atualizar
+    flash:
+      settings_update: Configurações atualizadas.
+      snippets_update: Página Inicial atualizada.
+      notice:
+        create:
+          f: '%{model} "%{name}" foi criada.'
+          m: '%{model} "%{name}" foi criado.'
+        update:
+          f: '%{model} "%{name}" foi atualizada.'
+          m: '%{model} "%{name}" foi atualizado.'
+        destroy:
+          f: '%{model} "%{name}" foi excluida.'
+          m: '%{model} "%{name}" foi excluido.'
+      error:
+        create:
+          f: '%{model} "%{name}" não pode ser criada. %{reason}'
+          m: '%{model} "%{name}" não pode ser criado. %{reason}'
+        update:
+          f: '%{model} "%{name}" não pode ser atualizada. %{reason}'
+          m: '%{model} "%{name}" não pode ser atualizado. %{reason}'
+        destroy:
+          f: '%{model} "%{name}" não pode ser excluida. %{reason}'
+          m: '%{model} "%{name}" não pode ser excluido. %{reason}'
+  support:
+    array:
+      last_word_connector: " e "
+      two_words_connector: " e "
+      words_connector: ", "

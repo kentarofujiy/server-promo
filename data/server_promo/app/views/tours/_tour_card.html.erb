@@ -1,0 +1,22 @@
+   <% @tours.each do |tour| %>
+    <div class="grid-cell span-4 skip-4-from-3">
+  <%= link_to tour_path(tour), class: 'tour-card' do %>
+    <div class="tour-card-image">
+    <img src="<%= url_for(tour.avatar) %>" />
+      <%#= image_tag tour_image_url(tour), alt: tour.name %>
+    </div>
+    <div class="tour-card-name"><%= tour.name %></div>
+    <div class="tour-card-description">
+      <%# if tour.duration.present? %>
+        <%#= t 'tours.card_duration.html', value: distance_of_time_in_words(tour.duration) %>
+        <br>
+      <%# end %>
+      <%# if tour.distance.present? %>
+        <%#= t 'tours.card_distance.html', value: number_to_human(tour.distance) %>
+      <% end %>
+         <td><%= link_to 'Detalhes', tour %></td>
+        <td><%= link_to 'Editar', edit_tour_path(tour) %></td>
+        <td><%= link_to 'Deletar', tour, method: :delete, data: { confirm: 'Você tem certeza?' } %></td>
+    </div>
+</div>
+  <% end %>

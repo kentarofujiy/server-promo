@@ -1,0 +1,25 @@
+pt-BR:
+  address:
+    name: &name
+      one: Endereço
+      other: Endereços
+      gender: m
+    attributes: &attributes
+      route: Endereço
+      extension: Complemento
+      neighborhood: Bairro
+      postcode: CEP
+      locality: Cidade
+      region: Estado
+      latitude: Latitude
+      longitude: Longitude
+    formatted:
+      default: "%{full} - %{neighborhood}"
+      long: "%{full} - %{neighborhood} - %{locality}, %{region}"
+  activerecord:
+    models:
+      address:
+        <<: *name
+    attributes:
+      address:
+        <<: *attributes

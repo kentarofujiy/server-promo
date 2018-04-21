@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="500px" height="500px" viewBox="0 0 500 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.3 (29802) - http://www.bohemiancoding.com/sketch -->
+    <title>pin-poi</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="pin-poi">
+            <g id="category-pin" transform="translate(68.000000, 0.000000)">
+                <path d="M181.83,0 C81.369,0 0,81.36 0,181.83 C0,329.57 181.83,500 181.83,500 C181.83,500 363.66,329.57 363.66,181.83 C363.532,81.36 282.163,0 181.83,0" id="pin" fill="#62A021"></path>
+                <path d="M332.144605,180.123992 C332.144605,262.966878 264.983087,330.135 182.138,330.135 C99.292913,330.135 32.1313955,262.966878 32.1313955,180.123992 C32.1313955,97.281107 99.292913,30.135 182.138,30.135 C264.983087,30.135 332.144605,97.281107 332.144605,180.123992" id="hole" fill="#FFFFFF"></path>
+            </g>
+            <polygon id="Shape" fill="#62A021" points="274.922898 114.637813 270.925001 94.7008136 180.97231 94.7008136 180.97231 264.165311 200.961797 264.165311 200.961797 194.385812 256.93236 194.385812 260.930258 214.322812 330.893462 214.322812 330.893462 114.637813"></polygon>
+        </g>
+    </g>
+</svg>

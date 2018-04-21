@@ -1,0 +1,32 @@
+pt-BR:
+  registrations:
+    index:
+      title: Verificar Inscrição
+      enter_yout_email: 'Entre com seu e-mail:'
+      button:
+        verify: Verificar
+        sign_up: Fazer Minha Inscrição
+        enter_queue: Entrar na fila de espera
+      alert:
+        sign_up_not_be_found_html: 'Inscrição para o e-mail "<strong>%{email}</strong>" não foi encontrada.'      
+        registration_is_active_html: Inscrição para o e-mail "<strong>%{email}</strong>" está ativa.
+        registration_is_in_queue_html: 'Inscrição para o e-mail "<strong>%{email}</strong>" está na fila de espera.'
+        retistration_is_canceled_html: 'Inscrição para o e-mail "<strong>%{email}</strong>" está cancelada.'
+        cancel_your_registration: Para cancelar sua inscrição entre em contato através do e-mail eventos@conhecacampinas.com.br.
+    new:
+      title: Nova Inscrição
+      form:
+        documents: Documentos
+        contact: Contato
+        home_address: Endereço Residêncial
+        education_and_profession: Escolaridade e Profissão
+        medical_data: Dados Médicos
+        company: Empresa/Organização
+      button:
+        submit: Enviar Inscrição
+        submit_queue: 'Entrar na fila de espera'
+      alert:
+        registration_fee_html: 'O evento possui uma taxa de inscrição de <strong>%{fee}</strong>. Você pode conferir informações sobre como fazer o pagamento nas instruções de inscrição, no topo da página.'
+        registration_in_queue_html: 'Todas as vagas para este evento foram preenchidas, entretanto você pode enviar sua inscrição e entrar na fila de espera. Em casos de cancelamento, as vagas serão transferidas às pessoas na fila, por ordem de chegada.'
+
+

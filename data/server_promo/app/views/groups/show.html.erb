@@ -1,0 +1,46 @@
+<p id="notice"><%= notice %></p>
+
+
+<main class="content color-place">
+  <%= content_tag :div, id: "map", data: { pois: @poi_groups.to_json(methods: [:address]) } do -%>
+  <% end -%>
+    <div class="content-filler-sm"></div>
+
+
+  <header class="content-header">
+    <%= image_tag '/images/front_end/icons/pin-place.svg', class: 'content-header-icon' %>
+    <h1 class="content-header-title">  <%= @group.name %>
+</h1>
+  </header>
+ <div class="content-frame">
+
+  <section class="container row">
+    <div  class="col-md-12">
+      <%= form_tag(pois_path, :method => "get", id: "search-form", class:"form-inline row") do %>
+        <%= text_field_tag :q, params[:q], placeholder: "Buscar Lugares", class:"form-control col-md-10 busca-poi" %>
+      <%= submit_tag "Buscar", :q=> nil,  class:"btn btn-primary col-md-2" %>
+      <% end %>
+    </div>
+    
+    <div  class="">
+       <%#= link_to 'Criar Estabelecimento', new_poi_path, class:"btn btn-success" %>
+       <%#= link_to 'Refazer a busca', "", id: "redo-search", class:"btn btn-warning" %>
+  
+    </div>
+    
+    </section>
+    <br>
+     <div class="place"> 
+      <div class="row" style="display: contents;">
+          <div class="group-detail-main-info col-md-9" style="display: flex; flex-wrap: wrap">
+            <%= render 'pois/poicard', obj: @poi_groups %>
+          </div>
+          <div class="links-sidebar col-md-3">
+            <%= render "groups/groups_side_menu" %>
+          </div>
+      </div>
+    </div>
+    <%= link_to 'Editar', edit_group_path(@group) %> |
+    <%= link_to 'Voltar', groups_path %>
+  </div>
+</main>

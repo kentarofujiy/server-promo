@@ -1,0 +1,31 @@
+en-US:
+  tour:
+    name: &name
+      one: Tour
+      other: Tours
+      gender: m
+    attributes: &attributes
+      name: Name
+      stops: Places
+    intensity:
+      light: Light
+      moderate: Moderate
+      heavy: Heavy
+    audience:
+      everyone: Everyone
+      children: Children
+      youth: Youth
+      adults: Adults
+      seniors: Seniors
+    summary:
+      zero: Empty Tour
+      one: '%{sample}'
+      two: '%{sample} and more 1'
+      other: '%{sample} and others %{count} places'
+  activerecord:
+    models:
+      tour:
+        <<: *name
+    attributes:
+      tour:
+        <<: *attributes

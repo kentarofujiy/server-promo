@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @landmark.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @landmark.description %>
+</p>
+
+<p>
+  <strong>Details:</strong>
+  <%= @landmark.details %>
+</p>
+
+<p>
+  <strong>Avatar:</strong>
+  <%= @landmark.avatar %>
+</p>
+
+  <% if @landmark.pois.any? %>
+               <p class="category-wrapper">Categorias: <%= render @landmark.pois %></p>
+  <% end %>
+
+
+<%= link_to 'Edit', edit_landmark_path(@landmark) %> |
+<%= link_to 'Back', landmarks_path %>

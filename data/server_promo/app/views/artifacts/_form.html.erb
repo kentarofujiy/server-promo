@@ -1,0 +1,30 @@
+<%= form_for(@artifact) do |f| %>
+  <% if @artifact.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@artifact.errors.count, "error") %> prohibited this artifact from being saved:</h2>
+
+      <ul>
+      <% @artifact.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+   <div class="control-group">
+    <%= f.label :name, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :name, :class => 'form-control' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :upload, value: 'File to upload', :class => 'control-label' %>
+    <div class="controls">
+      <%= f.file_field :upload, :class => 'form-control' %>
+    </div>
+  </div>
+  <%= f.hidden_field :projeto_id %>
+  <%= f.submit nil, :class => 'btn btn-primary' %>
+
+
+<% end %>

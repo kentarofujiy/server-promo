@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="500px" height="500px" viewBox="0 0 500 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.3 (29802) - http://www.bohemiancoding.com/sketch -->
+    <title>open</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="open" fill="#7ED321">
+            <path d="M445.648793,208.539239 C448.49936,221.925542 450,235.796033 450,250 C450,360 360,450 250,450 C140,450 50,360 50,250 C50,140 140,50 250,50 C296.89561,50 340.156182,66.3576732 374.357755,93.6490584 L336.752051,131.035001 C312.454758,113.414526 282.634549,103 250.5,103 C169.375,103 103,169.375 103,250.5 C103,331.625 169.375,398 250.5,398 C329.682476,398 394.812867,334.765619 397.886539,256.301492 L445.648793,208.539239 Z" id="Combined-Shape"></path>
+            <polygon id="Shape" points="258.277778 252.888889 182.444444 177.055556 133 226.222222 258.277778 351.5 486.78125 122.937499 437.614583 73.7708321"></polygon>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,73 @@
+<%= form_for(@poi) do |f| %>
+  <% if @poi.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@poi.errors.count, "error") %> prohibited this poi from being saved:</h2>
+
+      <ul>
+      <% @poi.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+<div class="form-group">
+    <%= f.label :avatar %>
+    <%= f.file_field :avatar, class: "form-control" %>
+</div>
+
+  <div class="field">
+    <%= f.label :string %><br>
+    <%= f.text_field :string %>
+  </div>
+
+  <div class="field">
+    <%= f.label :acessibilidade %><br>
+    <%= f.text_field :acessibilidade %>
+  </div>
+  <div class="field">
+    <%= f.label :address %><br>
+    <%= f.text_field :address %>
+  </div>
+   <div class="field">
+    <%= f.label :latitude %><br>
+    <%= f.text_field :latitude %>
+  </div>
+  <div class="field">
+    <%= f.label :longitude %><br>
+    <%= f.text_field :longitude %>
+  </div>
+<%#= f.select :category_ids[], options_from_collection_for_select(Category.all, :id, :name), include_blank: true %>
+
+  <p>
+    <%= f.collection_check_boxes :category_ids, Category.all, :id, :name do |cb| %>
+    <% cb.label(class: "checkbox-inline input_checkbox") {cb.check_box(class: "checkbox") + cb.text} %>
+    <% end %>
+  </p>
+
+  <p>
+    <%= f.collection_check_boxes :tour_ids, Tour.all, :id, :name do |cb| %>
+    <% cb.label(class: "checkbox-inline input_checkbox") {cb.check_box(class: "checkbox") + cb.text} %>
+    <% end %>
+  </p>
+
+  <p>
+    <%= f.collection_check_boxes :group_ids, Group.all, :id, :name do |cb| %>
+    <% cb.label(class: "checkbox-inline input_checkbox") {cb.check_box(class: "checkbox") + cb.text} %>
+    <% end %>
+  </p>
+
+<p>
+    <%= f.collection_check_boxes :landmark_ids, Landmark.all, :id, :title do |cb| %>
+    <% cb.label(class: "checkbox-inline input_checkbox") {cb.check_box(class: "checkbox") + cb.text} %>
+    <% end %>
+  </p>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

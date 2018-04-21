@@ -1,0 +1,37 @@
+<% obj.each do |poi| %>
+
+<div class="place-grid-item">
+  <%= link_to poi_path(poi), class: 'place-card' do %>
+  <div class="place-card-image" style="background-image:url(<% if poi.avatar.attached? %> <%= url_for(poi.avatar) %> <% else %> https://picsum.photos/200 <% end %>)" >&nbsp;</div>
+    <div class="place-card-name"><%= poi.name %></div>
+    <div class="place-card-address"><%= poi.address %></div>
+    <%# if place.schedule.any? %>
+      <%# if place.open? %>
+        <div class="place-card-status-open">
+          <%= image_tag '/images/front_end/icons/open.svg', class: 'place-card-status-icon' %>
+          Aberto
+        </div>
+      <%# else %>
+        <!-- <div class="place-card-status-closed"> -->
+          <%#= image_tag '/images/front_end/icons/closed-gray.svg', class: 'place-card-status-icon' %>
+        <!--  Fechado
+        </div> -->
+      <%# end %>
+              <% end %>
+               <% if poi.categories.any? %>
+               <p class="category-wrapper">Categorias: <%= render poi.categories %></p>
+    <%# else %>
+      <div class="place-card-no-status">&nbsp;</div>
+       <%# end %>
+  <% end %>
+                  <% if logged_in? %>
+             <p>
+               <%= link_to 'Detalhes', poi, class:"btn btn-default btn-xs" %>
+               <%= link_to 'Editar', edit_poi_path(poi), class:"btn btn-default btn-xs" %>
+               <%= link_to 'Deletar', poi, method: :delete, data: { confirm: 'Are you sure?' }, class:"btn btn-default btn-xs" %>
+             </p>
+          <% end %>
+  </div>
+
+
+<% end %>

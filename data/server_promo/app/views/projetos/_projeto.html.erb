@@ -1,0 +1,33 @@
+<% obj.each do |projeto| %>
+
+<div class="media">
+  <div class="media-left">
+    <a href="#">
+      <img class="media-object" src="http://via.placeholder.com/150x150" alt="...">
+    </a>
+  </div>
+  <div class="media-body">
+    <h4 class="media-heading"><%= projeto.nome %></h4>
+    <% if projeto.categories.any? %>
+      <p>Categorias: <%= render projeto.categories %></p>
+    <% end %>
+    <small>Especialidade: <%= projeto.especialidade %></small>
+    <div class="article-meta-details">
+
+    <small>Criado por: <%= projeto.user.username if projeto.user%>,
+
+    às <%= time_ago_in_words(projeto.created_at) %>,
+
+    ultima atualização: <%= time_ago_in_words(projeto.updated_at) %></small>
+
+    </div>
+    <hr>
+    <button type="button" class="btn btn-default"> <%= link_to "Ver Detalhes", projeto_path(projeto) %> </button>
+    <% if logged_in? && (current_user == projeto.user || current_user.admin?) %>   
+    <button type="button" class="btn btn-info"><%= link_to "Editar Projeto", edit_projeto_path(projeto) %></button>
+    <button type="button" class="btn btn-danger"><%= link_to "Apagar Projeto", projeto_path(projeto), method: :delete, data: {confirm: "Você tem certeza?"} %></button>
+    <% end %>
+  </div>
+</div>
+
+<% end %>

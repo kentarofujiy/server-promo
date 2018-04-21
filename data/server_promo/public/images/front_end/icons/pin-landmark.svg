@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="500px" height="500px" viewBox="0 0 500 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.3 (29802) - http://www.bohemiancoding.com/sketch -->
+    <title>pin-sights</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="pin-sights">
+            <g id="Group" transform="translate(104.000000, 0.000000)">
+                <path d="M146,0 C65.631,0 0.536,65.09 0.536,145.46 C0.536,263.66 146,400 146,400 C146,400 291.464,263.66 291.464,145.46 C291.361,65.09 226.266,0 146,0" id="Fill-1" fill="#62B446"></path>
+                <polyline id="Fill-3" fill="#FFFFFF" points="146.048 54.98 172.625 108.81 231.984 117.54 189.016 159.44 199.201 218.61 146.048 190.67 92.896 218.61 102.984 159.44 60.016 117.54 119.472 108.81 146.048 54.98"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

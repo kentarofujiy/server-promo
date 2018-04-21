@@ -1,0 +1,13 @@
+en-US:
+  tours:
+    index:
+      title: Trips
+    card_duration:
+      html: <strong>%{value}</strong> of estimated duration
+    card_distance:
+      html: <strong>%{value}km</strong> of total distance
+    tab_duration: Duration
+    tab_distance: Distance
+    tab_audience: Audience
+    tab_intensity: Intensity
+    about_the_tour: About the Trip
